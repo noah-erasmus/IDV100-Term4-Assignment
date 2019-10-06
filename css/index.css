@@ -1,0 +1,90 @@
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar-container{
+    background: #dc2543;
+}
+
+.navbar{
+    padding: 20px;0 ;
+    
+}
+
+.navbar-brand{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+    color: #262626;
+}
+
+.nav-item{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;     
+}
+.navbar-light .navbar-nav .navitem .nav-link:hover,
+
+.navbar-light .navbar-nav .navitem.active .nav-link{
+    background: #dc2543;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .navitem .nav-link{
+    color: #262626;
+    padding: 5px 15px;
+}
+
+.navbar-light navbar-toggler{
+    border: none;
+    color: #ffffff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: 0;
+}
+
+.navbar-collapse{
+    background: #ffffff;
+}
+
+/* footer */
+
+footer{
+    background-color: beige;
+    color: red;
+    padding: 2rem  0 3rem;
+    margin-top: 1rem;
+}
+
+footer img{
+    height: 3rem;
+    margin: 1.5rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer svg.svg-inline--fa{
+    font-size: 1.6rem;
+    margin: 1.2re. 1.5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover{
+    color: #1ebba3;
+}
+
+hr.socket{
+    border-top: .2rem solid #666b71;
+    width 100%;
+}
+
