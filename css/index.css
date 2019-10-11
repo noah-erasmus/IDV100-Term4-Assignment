@@ -10,12 +10,29 @@ header{
     width: 100%;
 }
 
-.navbar-container{
+header{
     background: #dc2543;
 }
 
 .navbar{
-    padding: 20px;0 ;
+    padding: 20px;
+    
+}
+
+.nav-item{
+    width: 140px;
+    height: 50px;   
+    
+}
+
+.nav-link{
+    color: #ffffff;
+    
+}
+
+.nav-link:hover{
+    color: #f2f2f2;
+    text-decoration: underline solid white;
     
 }
 
@@ -30,12 +47,13 @@ header{
 .nav-item{
     font-weight: 800;
     text-transform: uppercase;
-    font-family: 'Archivo Black', sans-serif;     
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 15px;
+    font-size: 15px;
 }
 .navbar-light .navbar-nav .navitem .nav-link:hover,
 
 .navbar-light .navbar-nav .navitem.active .nav-link{
-    background: #dc2543;
     color: #ffffff;
 }
 
@@ -53,7 +71,15 @@ header{
 }
 
 .navbar-collapse{
-    background: #ffffff;
+    border: none;
+}
+
+.navbar-toggler-icon{
+    color: #ffffff;
+}
+
+#navbarSupportedContent{
+    width: 200px;
 }
 
 /* footer */
