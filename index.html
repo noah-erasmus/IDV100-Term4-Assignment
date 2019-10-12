@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <div class="container-fluid">
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -36,8 +37,8 @@
     <!--Nick's code-->
     <!--header-->
     
-    <div class="navbar-container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#">Moovee</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,15 +46,18 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-lg-auto">
-              <li class="nav-item active">
+                <li class="nav-item active">
                 <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
+                </li>
+                <li class="nav-item">
                 <a class="nav-link" href="#">Library</a>
-              </li>
+                </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Watchlist</a>
-              </li>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sign in/Sign up</a>
+                </li>
               
               
             </ul>
@@ -61,7 +65,7 @@
         </nav>
         
     
-    </div><!--navbar-container-->
+        </header><!--navbar-container-->
     
      <!--img-slider-->
         <div class="img-slider-container">
@@ -115,7 +119,7 @@
                 </a>
                 
                 <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>                
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>              
                 </a>            
             
             </div>      
@@ -125,14 +129,38 @@
     
     <!--suggested-movies-->
     <div id="Trending Movies">
-        <div class="jumbontron container-fluid">
+        <div class="jumbontron">
             <div class="col-12 text-center">
             <h3 class="heading">Trending Movies</h3>
             <div class="heading-underline"></div>
             </div>
             
             <div class="row no-padding">
-                <div class="col-sm-4">
+                <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="portfolio">
+                        <a href="#" target="_blank">
+                            <img src="img/tmp-1.jpg">                        
+                        </a>                    
+                    </div>                
+                </div>
+                
+                  <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="portfolio">
+                        <a href="#" target="_blank">
+                            <img src="img/tmp-1.jpg">                        
+                        </a>                    
+                    </div>                
+                </div>
+                
+                  <div class="col-sm-12 col-md-4 col-lg-2">
+                    <div class="portfolio">
+                        <a href="#" target="_blank">
+                            <img src="img/tmp-1.jpg">                        
+                        </a>                    
+                    </div>                
+                </div>
+                
+                  <div class="col-sm-12 col-md-4 col-lg-2">
                     <div class="portfolio">
                         <a href="img./tmp-1.jpg" target="_blank">
                             <img src="img/tmp-1.jpg">                        
@@ -140,7 +168,7 @@
                     </div>                
                 </div>
                 
-                 <div class="col-sm-4">
+                  <div class="col-sm-12 col-md-4 col-lg-2">
                     <div class="portfolio">
                         <a href="img./tmp-1.jpg" target="_blank">
                             <img src="img/tmp-1.jpg">                        
@@ -148,31 +176,7 @@
                     </div>                
                 </div>
                 
-                 <div class="col-sm-4">
-                    <div class="portfolio">
-                        <a href="img./tmp-1.jpg" target="_blank">
-                            <img src="img/tmp-1.jpg">                        
-                        </a>                    
-                    </div>                
-                </div>
-                
-                 <div class="col-sm-4">
-                    <div class="portfolio">
-                        <a href="img./tmp-1.jpg" target="_blank">
-                            <img src="img/tmp-1.jpg">                        
-                        </a>                    
-                    </div>                
-                </div>
-                
-                 <div class="col-sm-4">
-                    <div class="portfolio">
-                        <a href="img./tmp-1.jpg" target="_blank">
-                            <img src="img/tmp-1.jpg">                        
-                        </a>                    
-                    </div>                
-                </div>
-                
-                 <div class="col-sm-4">
+                  <div class="col-sm-12 col-md-4 col-lg-2">
                     <div class="portfolio">
                         <a href="img./tmp-1.jpg" target="_blank">
                             <img src="img/tmp-1.jpg">                        
@@ -257,12 +261,23 @@
         <div class="heading-underline"></div>
         </div>
         
-        <div class="row-padding">
+        <div class="row row-padding">
             <div class="col-md-4">
                 <div class="card text-center">
                     <img class="card-img-top" src="img/basic.png">
                     <div class="card-body">
                         <h4>$1.99</h4>
+
+                    </div>
+
+                </div>
+            </div>
+            
+             <div class="col-md-4">
+                <div class="card text-center">
+                    <img class="card-img-top" src="img/standard.png">
+                    <div class="card-body">
+                        <h4>$3.99</h4>
 
                     </div>
 
@@ -340,7 +355,7 @@
         
     
     
-    
+   </div><!--container-fluid--> 
 </body>
 
 </html>

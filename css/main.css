@@ -22,12 +22,26 @@ body{
     overflow-x: hidden;
 }
 
+.container-fluid{
+    padding: 0px;
+}
+
 .narrow{
     width: 75%;
     margin: 0 auto;
     padding-top: 2rem;
     
 }
+
+.carousel-control-next-icon .carousel-control-prev-icon {
+    display: inline-block;
+    width: 40px;
+    height: 130px;
+    background: no-repeat 50%/100% 100%;
+}
+
+
+
 
 .btn-md{
     border-width: medium;
@@ -38,7 +52,10 @@ body{
 }
 
 .carousel-item{
-    height: 100vh;
+    width: 100%;
+    height: 60vh;
+    margin-top: 100px;
+    background-size: cover;
 }
 .carousel-caption{
     position: absolute;
@@ -89,18 +106,14 @@ h3.heading{
     margin: 0 auto 2rem;
 }
 
-.portfoilo img{
-    max-width: 100%;
+.portfolio img{
+    width: 100%;
     transition: transform .5s ease;
 }
 
-.portfoilo img:hover{
-    transform: scale(1.1);
-    cursor: zoom-in;
-}
 
-.portfoilo{
-    overflow: hidden;
+.portfolio{
+    overflow: hidden !imo;
 }
 
 .row.no-padding [class*=col-]{
