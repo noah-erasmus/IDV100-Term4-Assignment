@@ -1,44 +1,325 @@
+<<<<<<< HEAD
 body {
     margin: 0;
     padding:0;
 }
 
-.individual-page-content {
-    width:100%;
-    height:900px;
-    background-color: black;
-}
-
 .condensed-info {
     width:100%;
-    height:350px;
+    margin-top: 200px;
+    height:400px;
     padding-top: 50px;
-    background-color: lightgray;
+    background-image: url(../img/midsommer%20background.jpeg);
+    background-size: cover;
+    background-position: center;
     float: left;
 }
+
+.stars {
+    width:10%;
+    height:30px;
+    margin-top: -10px;
+    margin-right: 110px;
+    float: right;
+}
+
+.rating {
+    width:50%;
+    height:30px;
+    margin-top: 10px;
+    float: right;
+}
+
+.rating-score {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.movie-information-info {
+    width:75%;
+    height:100px;
+    padding-top: 20px;
+    background-color: aqua;
+    float: right;
+}
+
+.celeb-info {
+    width:15%;
+    height:100px;
+    margin-top: 20px;
+    padding-left: 20px;
+    float: left;
+}
+.movie-information {
+    width:75%;
+    height:100px;
+    padding-top: 20px;
+    float: right;
+}
+
+.movie-info {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.director {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.writer {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.actors {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.screen-duration {
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+.screen-genre {
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    letter-spacing: 4px;
+}
+.movie-specs {
+    width:50%;
+    height:20px;
+    margin-top: 20px;
+    margin-right: 105px;
+    float: right;
+}
+
+.duration {
+    width:150px;
+    height:100%;
+    float: left;
+}
+
+.genre {
+    width:400px;
+    height:100%;
+    float: left;
+}
+
+.add-to {
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin-top: -110px;
+    margin-left: 1250px;
+    background-color:  black;
+}
+
+.glyphicon-plus {
+    font-size:30px;
+    color: white;
+    margin-top: 25px;
+    margin-left: 25px; 
+}
+.glyphicon-repeat {
+    font-size:100px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px; 
+}
+
+.glyphicon-star {
+    font-size:60px;
+    color: white;
+}
+
+.glyphicon.fast-right-spinner {
+    -webkit-animation: glyphicon-spin-r 2s infinite linear;
+    animation: glyphicon-spin-r 2s infinite linear;
+}
+
+@-webkit-keyframes glyphicon-spin-r {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes glyphicon-spin-r {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
 
 .movie-poster {
     width:200px;
-    height:250px;
-    margin-left: 100px;
-    background-color: darkgrey;
+    height:200px;
+    border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: 600px;
+    background-image:url(../img/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_.jpg);
+    background-size: cover;
     float: left;
 }
-
-.condensed-data {
-    width:500px;
-    height:250px;
+.movie-title {
+    width:700px;
+    height:100px;
     margin-left: 50px;
     float: left;
-    background-color: white;
 }
 
-.info-block {
-    width:1200px;
-    height:200px;
-    background-color: white;
-    margin-left: 100px;
-    margin-top: 100px;
+.movie-title {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.year {
+    width:100%;
+    height:70px;
+    margin-top: 50px;
     float: left;
+}
+
+.year-type {
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-top: -10px;
+    letter-spacing: 5px;
+    float: left;
+}
+.bracket-one {
+    font-size:50px;
+    color: white;
+    margin-left: 150px;
+    float: left;
+}
+
+.bracket-two {
+    font-size:50px;
+    color: white;
+    float: left;
+}
+
+=======
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar-container{
+    background: #dc2543;
+}
+
+.navbar{
+    padding: 20px;0 ;
     
 }
+
+.navbar-brand{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 2em;
+    color: #262626;
+}
+
+.nav-item{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: 'Archivo Black', sans-serif;     
+}
+.navbar-light .navbar-nav .navitem .nav-link:hover,
+
+.navbar-light .navbar-nav .navitem.active .nav-link{
+    background: #dc2543;
+    color: #ffffff;
+}
+
+.navbar-light .navbar-nav .navitem .nav-link{
+    color: #262626;
+    padding: 5px 15px;
+}
+
+.navbar-light navbar-toggler{
+    border: none;
+    color: #ffffff;
+    border: 2px solid #7f7f7f;
+    border-radius: 0;
+    outline: 0;
+}
+
+.navbar-collapse{
+    background: #ffffff;
+}
+
+/* footer */
+
+footer{
+    background-color: beige;
+    color: red;
+    padding: 2rem  0 3rem;
+    margin-top: 1rem;
+}
+
+footer img{
+    height: 3rem;
+    margin: 1.5rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer svg.svg-inline--fa{
+    font-size: 1.6rem;
+    margin: 1.2re. 1.5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover{
+    color: #1ebba3;
+}
+
+hr.socket{
+    border-top: .2rem solid #666b71;
+    width 100%;
+}
+
+>>>>>>> 366f5061e578f1a2f93350459386a09c5122c64f
