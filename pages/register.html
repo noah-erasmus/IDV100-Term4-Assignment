@@ -19,23 +19,22 @@
     <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet">
     <!-- Main.CSS-->
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
-<!-------Navigation
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">Brand</a>
+<!-------Navigation-->
+<nav class="navbar navbar-expand-md">
+    <a href="#" class="navbar-brand">Brand Logo</a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
-    </button>---->
+    </button>
 
-
-<!--
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
--->
-            <!-- nav links will probably change according to the sitemap 
-
+            <!-- nav links will probably change according to the sitemap -->
             <a href="#" class="nav-item nav-link active">Home</a>
             <a href="#" class="nav-item nav-link">Movies</a>
             <a href="#" class="nav-item nav-link">Series</a>
@@ -46,15 +45,35 @@
         </div>
     </div>
 </nav>
-Navigation------------>
 <!--Register Section-->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col left">1 0f 2</div>
-        <div class="col right">2 0f 2
-            <div class="form">
-
+        <div class="col-md-8 left-section">
+            <div class="left-sec-content align-center">
+                <h2>Sign Up</h2>
+                <p>Sign up today for unlimited movie streaming</p>
+                <button type="button" class="btn btn-light" id="button">Sign Up</button>
             </div>
+        </div>
+
+
+
+
+        <div class="col-md-4 login-section bg-invert">
+                <h2>Sign In</h2>
+                <p>Sign in to continue</p>
+                <form action="" class="signIn-form">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <p class="forgot"><a href="#forgottenPassword">Forgotten Password</a> ?</p>
+                <button type="submit" class="btn btn-light text-center" id="button">Login</button>
+                </form>
         </div>
     </div>
 </div>
