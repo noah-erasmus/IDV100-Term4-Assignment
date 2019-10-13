@@ -19,6 +19,8 @@ overflow: hidden;
     position: relative;
     background-color: black;
     color: white;
+    padding-left: 55px;
+    padding-right: 55px;
 
 }
 
@@ -51,6 +53,7 @@ font-size: large;
 text-transform: uppercase;
 width: 125px;
 margin-top: 30px;
+margin-bottom: 100px;
 }
 
 .navbar{
@@ -75,15 +78,7 @@ margin-top: 30px;
     color: red;
     text-decoration: none;
 }
-
-.navbar-dark .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;..");
-}
-
-.humberger-toggler.navbar-toggler-icon {
-}
-
-.humberger-toggler.navbar-toggler {
+.humberger-toggler.navbar-toggler{
     border-color: red;
 }
 
@@ -94,4 +89,22 @@ margin-top: 30px;
 .footer{
     background-color: rgba(224, 3, 3, 0.877);
     height: 7em;
+    color: white;
 }
+
+.footer p{
+    text-align: center;
+    color: black;
+}
+
+.social-media-icons{
+    text-align: center;
+    padding: 20px;
+    color: rgba(31, 0, 0, 0.842);
+}
+
+.social-media-icons:hover{
+    color: white;
+}
+
+
