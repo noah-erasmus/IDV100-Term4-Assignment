@@ -1,7 +1,72 @@
-.left {
-    background-color: whitesmoke;
+
+.left-section{
+background-image: url(../img/karen-zhao-jLRIsfkWRGo-unsplash.jpg);
+height: 100vh;
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
 }
 
-.right {
-    background-color: darkgrey;
+.left-sec-content {
+    z-index: 1;
+    color: white;
+    margin-top: 200px;
+    text-align: center;
+}
+
+.login-section{
+    position: relative;
+    background-color: black;
+    color: white;
+
+}
+
+#email{
+    background-color: black;
+    border-radius: 50px;
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+#pwd {
+    background-color: black;
+    border-radius: 50px;
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+#button{
+background-color: red;
+border-radius: 50px;
+border: none;
+height: 45px;
+color: white;
+font-family: 'Archivo';
+font-size: large;
+text-transform: uppercase;
+width: 125px;
+margin-top: 30px;
+}
+
+.navbar{
+    background-color: black;
+}
+
+.navbar a{
+    background-color: black;
+    color: red;
+    text-decoration: none;
+}
+
+.forgot{
+    float: right;
+}
+
+navbar-toggler{
+    background-color: red;
 }
