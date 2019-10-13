@@ -89,6 +89,15 @@ margin-bottom: 100px;
     border-color: red;
 }
 
+.navbar-brand img{
+    width: 185px;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+
 .forgot {
     float: right;
 }
@@ -115,6 +124,11 @@ margin-bottom: 100px;
 }
 .social-media-icons a:hover{
     color: white;
+}
+
+.social-media-icons a:active{
+    background-color: white;
+    color: red;
 }
 
 
