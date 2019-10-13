@@ -1,7 +1,7 @@
 
 .left-section{
 background-image: url(../img/karen-zhao-jLRIsfkWRGo-unsplash.jpg);
-height: 100vh;
+height: 85vh;
 background-position: top;
 background-repeat: no-repeat;
 background-size: cover;
@@ -56,17 +56,42 @@ margin-top: 30px;
 .navbar{
     background-color: black;
 }
+#navbarCollapse a{
+    color: red;
+    text-align: center;
+}
 
+#navbarCollapse a:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+#navbarCollapse .active{
+    color: white;
+    font-weight: bold;
+}
 .navbar a{
     background-color: black;
     color: red;
     text-decoration: none;
 }
 
-.forgot{
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;..");
+}
+
+.humberger-toggler.navbar-toggler-icon {
+}
+
+.humberger-toggler.navbar-toggler {
+    border-color: red;
+}
+
+.forgot {
     float: right;
 }
 
-navbar-toggler{
-    background-color: red;
+.footer{
+    background-color: rgba(224, 3, 3, 0.877);
+    height: 7em;
 }
