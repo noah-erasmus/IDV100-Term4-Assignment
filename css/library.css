@@ -1,0 +1,16 @@
+body{
+    
+}
+
+/* NAVIGATION-BAR NAVIGATION-BAR NAVIGATION-BAR */
+#navbar-items{
+    color: white;
+}
+
+/* LIBRARY-PAGE LIBRARY-PAGE LIBRARY-PAGE */
+.poster{
+    background-color: blue;
+    height: 100px;
+    margin-bottom: 10px;
+    width: 100%;
+}
