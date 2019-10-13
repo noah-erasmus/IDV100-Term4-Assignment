@@ -56,6 +56,13 @@ margin-top: 30px;
 margin-bottom: 100px;
 }
 
+#button:hover{
+    transform: scale(1.05);
+    background: transparent;
+    border: 1px red solid;
+    color: red;
+}
+
 .navbar{
     background-color: black;
 }
@@ -87,8 +94,8 @@ margin-bottom: 100px;
 }
 
 .footer{
-    background-color: rgba(224, 3, 3, 0.877);
-    height: 7em;
+    background-color:red;
+    height: 6.5em;
     color: white;
 }
 
@@ -99,11 +106,14 @@ margin-bottom: 100px;
 
 .social-media-icons{
     text-align: center;
-    padding: 20px;
-    color: rgba(31, 0, 0, 0.842);
+    padding: 15px;
 }
-
-.social-media-icons:hover{
+.social-media-icons a{
+        padding: 10px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.842);
+}
+.social-media-icons a:hover{
     color: white;
 }
 
