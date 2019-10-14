@@ -1,7 +1,134 @@
-.left {
-    background-color: whitesmoke;
+
+.left-section{
+background-image: url(../img/karen-zhao-jLRIsfkWRGo-unsplash.jpg);
+height: 85vh;
+background-position: top;
+background-repeat: no-repeat;
+background-size: cover;
+overflow: hidden;
 }
 
-.right {
-    background-color: darkgrey;
+.left-sec-content {
+    z-index: 1;
+    color: white;
+    margin-top: 200px;
+    text-align: center;
 }
+
+.login-section{
+    position: relative;
+    background-color: black;
+    color: white;
+    padding-left: 55px;
+    padding-right: 55px;
+
+}
+
+#email{
+    background-color: black;
+    border-radius: 50px;
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+#pwd {
+    background-color: black;
+    border-radius: 50px;
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    color: white;
+}
+
+#button{
+background-color: red;
+border-radius: 50px;
+border: none;
+height: 45px;
+color: white;
+font-family: 'Archivo';
+font-size: large;
+text-transform: uppercase;
+width: 125px;
+margin-top: 30px;
+margin-bottom: 100px;
+}
+
+#button:hover{
+    transform: scale(1.05);
+    background: transparent;
+    border: 1px red solid;
+    color: red;
+}
+
+.navbar{
+    background-color: black;
+}
+#navbarCollapse a{
+    color: red;
+    text-align: center;
+}
+
+#navbarCollapse a:hover{
+    color: white;
+    transform: scale(1.2);
+}
+
+#navbarCollapse .active{
+    color: white;
+    font-weight: bold;
+}
+.navbar a{
+    background-color: black;
+    color: red;
+    text-decoration: none;
+}
+.humberger-toggler.navbar-toggler{
+    border-color: red;
+}
+
+.navbar-brand img{
+    width: 185px;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1);
+}
+
+
+.forgot {
+    float: right;
+}
+
+.footer{
+    background-color:red;
+    height: 6.5em;
+    color: white;
+}
+
+.footer p{
+    text-align: center;
+    color: black;
+}
+
+.social-media-icons{
+    text-align: center;
+    padding: 15px;
+}
+.social-media-icons a{
+        padding: 10px;
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.842);
+}
+.social-media-icons a:hover{
+    color: white;
+}
+
+.social-media-icons a:active{
+    background-color: white;
+    color: red;
+}
+
+

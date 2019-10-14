@@ -1,3 +1,237 @@
+<<<<<<< HEAD
+body {
+    margin: 0;
+    padding:0;
+}
+
+.condensed-info {
+    width:100%;
+    margin-top: 200px;
+    height:400px;
+    padding-top: 50px;
+    background-image: url(../img/midsommer%20background.jpeg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+}
+
+.stars {
+    width:10%;
+    height:30px;
+    margin-top: -10px;
+    margin-right: 110px;
+    float: right;
+}
+
+.rating {
+    width:50%;
+    height:30px;
+    margin-top: 10px;
+    float: right;
+}
+
+.rating-score {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.movie-information-info {
+    width:75%;
+    height:100px;
+    padding-top: 20px;
+    background-color: aqua;
+    float: right;
+}
+
+.celeb-info {
+    width:15%;
+    height:100px;
+    margin-top: 20px;
+    padding-left: 20px;
+    float: left;
+}
+.movie-information {
+    width:75%;
+    height:100px;
+    padding-top: 20px;
+    float: right;
+}
+
+.movie-info {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+.director {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.writer {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.actors {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.screen-duration {
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+
+.screen-genre {
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-left: 20px;
+    letter-spacing: 4px;
+}
+.movie-specs {
+    width:50%;
+    height:20px;
+    margin-top: 20px;
+    margin-right: 105px;
+    float: right;
+}
+
+.duration {
+    width:150px;
+    height:100%;
+    float: left;
+}
+
+.genre {
+    width:400px;
+    height:100%;
+    float: left;
+}
+
+.add-to {
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin-top: -110px;
+    margin-left: 1250px;
+    background-color:  black;
+}
+
+.glyphicon-plus {
+    font-size:30px;
+    color: white;
+    margin-top: 25px;
+    margin-left: 25px; 
+}
+.glyphicon-repeat {
+    font-size:100px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px; 
+}
+
+.glyphicon-star {
+    font-size:60px;
+    color: white;
+}
+
+.glyphicon.fast-right-spinner {
+    -webkit-animation: glyphicon-spin-r 2s infinite linear;
+    animation: glyphicon-spin-r 2s infinite linear;
+}
+
+@-webkit-keyframes glyphicon-spin-r {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes glyphicon-spin-r {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+
+.movie-poster {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border-radius: 50%;
+    margin-top: -50px;
+    margin-left: 600px;
+    background-image:url(../img/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_.jpg);
+    background-size: cover;
+    float: left;
+}
+.movie-title {
+    width:700px;
+    height:100px;
+    margin-left: 50px;
+    float: left;
+}
+
+.movie-title {
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.year {
+    width:100%;
+    height:70px;
+    margin-top: 50px;
+    float: left;
+}
+
+.year-type {
+    font-family: 'Archivo Black', sans-serif;
+    color: white;
+    font-size: 60px;
+    margin-top: -10px;
+    letter-spacing: 5px;
+    float: left;
+}
+.bracket-one {
+    font-size:50px;
+    color: white;
+    margin-left: 150px;
+    float: left;
+}
+
+.bracket-two {
+    font-size:50px;
+    color: white;
+    float: left;
+}
+
+=======
 {
     margin: 0px;
     padding: 0px;
@@ -93,3 +327,4 @@ header{
 }
 
 
+>>>>>>> 366f5061e578f1a2f93350459386a09c5122c64f

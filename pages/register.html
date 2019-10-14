@@ -19,44 +19,97 @@
     <!-- Google Fonts CSS -->
     <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet">
     <!-- Main.CSS-->
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <!--Font Awesome Icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
 <body>
-<!-------Navigation
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <a href="#" class="navbar-brand">Brand</a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+<!-------Navigation-->
+<nav class="navbar navbar-expand-md navbar-dark">
+    <a href="#" class="navbar-brand"><img src="../img/mooveelogo.png" alt="moovee logo"></a>
+    <button type="button" class="navbar-toggler humberger-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
-    </button>---->
+    </button>
 
-
-<!--
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
--->
-            <!-- nav links will probably change according to the sitemap 
-
+            <!-- nav links will probably change according to the sitemap -->
             <a href="#" class="nav-item nav-link active">Home</a>
             <a href="#" class="nav-item nav-link">Movies</a>
             <a href="#" class="nav-item nav-link">Series</a>
-            <a href="#" class="nav-item nav-link disabled" tabindex="-1">Favourites</a>
+            <a href="#" class="nav-item nav-link">Favourites</a>
         </div>
         <div class="navbar-nav ml-auto">
             <a href="#" class="nav-item nav-link">Login</a>
         </div>
     </div>
 </nav>
-Navigation------------>
 <!--Register Section-->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col left">1 0f 2</div>
-        <div class="col right">2 0f 2
-            <div class="form">
-
+        <div class="col-md-8 left-section">
+            <div class="left-sec-content align-center">
+                <h2>Sign Up</h2>
+                <p>Sign up today for unlimited movie streaming</p>
+                <button type="button" class="btn btn-light" id="button">Sign Up</button>
             </div>
         </div>
+
+        <div class="col-md-4 login-section bg-inverted">
+                <h2>Sign In</h2>
+                <p>Sign in to continue</p>
+                <div class="btn-group btn-group-lg">
+                    <a href="#"><button type="button" class=" active btn btn-dark">Sign In</button></a>
+                    <a href="#"><button type="button" class="btn btn-dark">Register</button></a>
+                </div>
+
+                <!--SIGN IN FORM-->
+                <form action="" class="signIn-form" id="login">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <p class="forgot"><a href="#forgottenPassword">Forgotten Password</a> ?</p>
+                <button type="submit" class="btn btn-light text-center" id="button">Login</button>
+                </form>
+
+                <!--REGISTRATION FORM-->
+                <!-- <form action="" class="register-form" id="register">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="surname">Surname:</label>
+                        <input type="text" class="form-control" id="surname">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <button type="submit" class="btn btn-light text-center" id="submit-button">Submit</button>
+                </form> -->
+        </div>
     </div>
+</div>
+
+<div class="footer">
+    <div class="social-media-icons">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon fa-2x"></i></a>
+        <a href="https://www.twitter.com/"><i class="fab fa-twitter icon fa-2x"></i></a>
+        <a href="https//www.instagram.com/"><i class="fab fa-instagram icon fa-2x"></i></a>
+    </div>
+    <p>Copyright | MooVee | 2019</p>
+
 </div>
 
     <!-- JavaScript -->
