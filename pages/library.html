@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/library.css">
 
     <title>Hello, world!</title>
@@ -34,10 +35,67 @@
     </nav>
      
     <div class="container">
-        <h1>Library</h1>
-        <div class="row col-sm-12">
-            <div class="poster col-sm-6"></div>
-            <div class="poster col-sm-6"></div>
+      <div class="row">
+        <div class="library-header col-xs">
+          <h1>Library</h1>
+        </div>
+        <div class="filter-btn col-xs offset-9">FILTER</div>
+      </div>
+        
+        <div class="filter-area row">
+            <select name="genre">
+                <option value="comedy">Comedy</option>
+                <option value="thriller">Thriller</option>
+                <option value="action">Action</option>
+                <option value="horror">Horror</option>
+                <option value="fantasy">Fantasy</option>
+            </select>
+            <select name="release-year">
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+            </select>
+            <select name="title">
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+            </select>
+            <select name="imdb">
+                <option value="10">10</option>
+                <option value="9">9</option>
+                <option value="8">8</option>
+                <option value="7">7</option>
+                <option value="6">6</option>
+            </select>
+        </div><!--filter-area-->
+        
+        <div class="library-entry-row row">
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+                <div class="entry-info">
+                    <h2>Blade Runner</h2>
+                    <h3>4/5</h3>
+                </div>
+            </div>
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+            </div>
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+            </div>
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+            </div>
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+            </div>
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+            </div>
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+            </div>
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+            </div>
+            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
+            </div>
         </div>
     </div>
 
