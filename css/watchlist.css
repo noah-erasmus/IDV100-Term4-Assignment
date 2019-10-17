@@ -1,0 +1,38 @@
+.navbar{
+    background-color: red;
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+.movies-watchlist{
+    background-color: grey;
+    height: 50vh;
+    width: 100%;
+
+}
+
+.img-holder{
+    background-color: red;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+.series-watchlist{
+    background-color: blue;
+    height: 50vh;
+    width: 100%;
+
+}
+
+.movies-poster-container{
+    width: 280px;
+    height: 220px;
+    border: blueviolet 2px solid;
+    background-color: powderblue;
+    display: inline-block;
+    margin: 0 auto;
+}
