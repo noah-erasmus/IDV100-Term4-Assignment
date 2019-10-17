@@ -1,108 +1,124 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/library.css">
+        <!-- Bootstrap CSS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/library.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger" style="background-color: red">
+          <a class="navbar-brand" href="#">MOOVEE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-danger" style="background-color: red">
-      <a class="navbar-brand" href="#">MOOVEE</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Library</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Watchlist</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-     
-    <div class="container">
-      <div class="row">
-        <div class="library-header col-xs">
-          <h1>Library</h1>
-        </div>
-        <div class="filter-btn col-xs offset-9">FILTER</div>
-      </div>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Watchlist</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
         
-        <div class="filter-area row">
-            <select name="genre">
-                <option value="comedy">Comedy</option>
-                <option value="thriller">Thriller</option>
-                <option value="action">Action</option>
-                <option value="horror">Horror</option>
-                <option value="fantasy">Fantasy</option>
-            </select>
-            <select name="release-year">
-                <option value="2019">2019</option>
-                <option value="2018">2018</option>
-                <option value="2017">2017</option>
-                <option value="2016">2016</option>
-                <option value="2015">2015</option>
-            </select>
-            <select name="title">
-                <option value="A">A</option>
-                <option value="B">B</option>
-                <option value="C">C</option>
-                <option value="D">D</option>
-                <option value="E">E</option>
-            </select>
-            <select name="imdb">
-                <option value="10">10</option>
-                <option value="9">9</option>
-                <option value="8">8</option>
-                <option value="7">7</option>
-                <option value="6">6</option>
-            </select>
-        </div><!--filter-area-->
-        
-        <div class="library-entry-row row">
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-                <div class="entry-info">
-                    <h2>Blade Runner</h2>
-                    <h3>4/5</h3>
-                </div>
-            </div>
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-            </div>
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-            </div>
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-            </div>
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-            </div>
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-            </div>
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-            </div>
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-            </div>
-            <div class="library-entry col-xs-10 col-sm-4 col-md-5 col-lg-2">
-            </div>
-        </div>
-    </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+        <div class="container">
+            
+            <div class="header-container row">
+                <h1>Library</h1>
+            </div><!--header-container-->
+            
+            <div class="filter-area row">
+                <div class="select col-xs-2 col-sm-2 col-md-2 col-lg-3">
+					<select name="genre" class="select-text" required>
+						<option value="" disabled selected></option>
+						<option value="horror">Horror</option>
+						<option value="action">Action</option>
+						<option value="comedy">Comedy</option>
+                        <option value="thriller">Thriller</option>
+                        <option value="romance">Romance</option>
+					</select><!--select-text-->
+					<span class="select-highlight"></span>
+					<span class="select-bar"></span>
+					<label class="select-label">Genre</label>
+				</div><!--select-->
+                <div class="select col-xs-2 col-sm-2 col-md-2 col-lg-3">
+					<select name="title" class="select-text" required>
+						<option value="" disabled selected></option>
+						<option value="a">A</option>
+						<option value="b">B</option>
+						<option value="c">C</option>
+                        <option value="d">D</option>
+                        <option value="e">E</option>
+					</select><!--select-text-->
+					<span class="select-highlight"></span>
+					<span class="select-bar"></span>
+					<label class="select-label">Title A-Z</label>
+				</div><!--select-->
+                <div class="select col-xs-2 col-sm-2 col-md-2 col-lg-3">
+					<select name="release-year" class="select-text" required>
+						<option value="" disabled selected></option>
+						<option value="2019">2019</option>
+						<option value="2018">2018</option>
+						<option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+					</select><!--select-text-->
+					<span class="select-highlight"></span>
+					<span class="select-bar"></span>
+					<label class="select-label">Release Year</label>
+				</div><!--select-->
+                <div class="select col-xs-2 col-sm-2 col-md-2 col-lg-3">
+					<select name="imdb" class="select-text" required>
+						<option value="" disabled selected></option>
+						<option value="10">10</option>
+						<option value="9">9</option>
+						<option value="8">8</option>
+                        <option value="7">7</option>
+                        <option value="6">6</option>
+					</select><!--select-text-->
+					<span class="select-highlight"></span>
+					<span class="select-bar"></span>
+					<label class="select-label">IMDB Score</label>
+				</div><!--select-->
+            </div><!--filter-area-->
+            
+            <div class="library-area container">
+                <div class="entry-line row">
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                </div><!--entry-line-->
+                <div class="entry-line row">
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                </div><!--entry-line-->
+                <div class="entry-line row">
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                </div><!--entry-line-->
+                <div class="entry-line row">
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                    <div class="entry col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                </div><!--entry-line-->
+            </div><!--library-area-->
+        </div><!--container-->
+    </body>
 </html>
