@@ -4,13 +4,12 @@ font-family: 'Archivo', sans-serif;
 font-family: 'Roboto', sans-serif;
 */
 
-<<<<<<< HEAD
+
 body {
     margin:0;
     padding:0;
 }
 
-=======
 {
     margin: 0px;
     padding: 0px;
@@ -38,6 +37,15 @@ body{
     width: 40px;
     height: 150px;
     background: no-repeat 50%/100% 100%;
+    z-index: 999999;
+}
+
+.carousel-control-next .carousel-control-prev {
+    display: inline-block;
+    width: 40px;
+    height: 150px;
+    background: no-repeat 50%/100% 100%;
+    z-index: 999999;
 }
 
 
@@ -195,6 +203,10 @@ h5{
     }
 }
 
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
+    z-index: 999999 !important;
+}
+
 /*section use to set transformation setting*/
     
->>>>>>> 366f5061e578f1a2f93350459386a09c5122c64f
+
