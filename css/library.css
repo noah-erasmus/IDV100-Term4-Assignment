@@ -128,22 +128,68 @@
 
 .entry{
     height: 100%;
+    margin: auto;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.entry-poster{
     background-image: url(../img/blade_runner.jpg);
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 80%;
     border-radius: 5px;
-    margin: auto;
+    position: relative;
+}
+
+.poster-btns{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+}
+
+.see-more{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url(../img/see-more.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+}
+
+.add-to-watchlist{
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-image: url(../img/add-to-watchlist.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 50%;
+}
+
+.entry-details{
+    width: 100%;
+    height: 50px;
+}
+
+.entry-details p{
+    margin-bottom: 0;
+    font-size: 12px;
 }
 
 @media (max-width: 768px){      /* XSMALL SCREENS */
     .entry-line{
-        height: 150px;
+        height: 200px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px){       /* SMALL SCREENS */
     .entry-line{
-        height: 150px;
+        height: 200px;
     }
     
     .select-label{
@@ -153,12 +199,12 @@
 
 @media (min-width: 992px) and (max-width: 1200px){       /* MEDIUM SCREENS */
     .entry-line{
-        height: 200px;
+        height: 250px;
     }
 }
 
 @media (min-width: 1200px){         /* LARGE SCREENS */
     .entry-line{
-        height: 250px;
+        height: 300px;
     }
 }
