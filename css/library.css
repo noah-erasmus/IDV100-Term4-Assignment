@@ -121,9 +121,10 @@
 
 /* LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY */
 .entry-line{
-    height: 250px;
+    height: 300px;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .entry{
@@ -135,50 +136,75 @@
 }
 
 .entry-poster{
-    background-image: url(../img/blade_runner.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 80%;
+    height: 70%;
     border-radius: 5px;
     position: relative;
 }
 
-.poster-btns{
+.entry-poster img{
     width: 100%;
-    position: absolute;
-    bottom: 0;
-    height: 20%;
-}
-
-.see-more{
-    width: 50%;
     height: 100%;
-    float: left;
-    background-image: url(../img/see-more.png);
-    background-position: center;
-    background-size: cover;
-    opacity: 50%;
-}
-
-.add-to-watchlist{
-    width: 50%;
-    height: 100%;
-    float: left;
-    background-image: url(../img/add-to-watchlist.png);
-    background-position: center;
-    background-size: cover;
-    opacity: 50%;
+    border-radius: 5px;
 }
 
 .entry-details{
     width: 100%;
-    height: 50px;
+    height: 40px;
+}
+
+.details-left{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.entry_title{
+    overflow: hidden;
+}
+
+.details-right{
+    width: 50%;
+    float: left;
+    height: 100%;
 }
 
 .entry-details p{
     margin-bottom: 0;
     font-size: 12px;
+}
+
+.entry-btns{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+.entry-btns p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.add-watchlist-btn{
+    height: 90%;
+    width: 47.5%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #dc2543;
+    color: white;
+    float: right;
+}
+
+.read-more-btn{
+    height: 90%;
+    width: 47.5%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #dc2543;
+    color: white;
+    float: left;
 }
 
 @media (max-width: 768px){      /* XSMALL SCREENS */
