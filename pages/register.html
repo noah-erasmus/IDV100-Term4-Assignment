@@ -21,7 +21,7 @@
     
 </head>
 <body>
-<!-------Navigation-->
+<!--NAVIGATION-->
 <nav class="navbar navbar-expand-md navbar-dark">
     <a href="#" class="navbar-brand"><img src="" alt=""></a>
     <button type="button" class="navbar-toggler humberger-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -30,16 +30,16 @@
 
     <div class="collapse navbar-collapse" id="navbarCollapse">
         <div class="navbar-nav">
-            <!-- nav links will probably change according to the sitemap -->
             <a href="#" class="nav-item nav-link active">Home</a>
             <a href="#" class="nav-item nav-link">Library</a>
             <a href="#" class="nav-item nav-link">Watchlist</a>
         </div>
         <div class="navbar-nav ml-auto">
-            <a href="../pages/register.html" class="nav-item nav-link" id="userAccountLogin">Login</a>
+            <a href="" class="nav-item nav-link" id="userAccountLogin"><i class="fas fa-user-ninja fa-2x"></i></a>
         </div>
     </div>
 </nav>
+<!--NAVIGATION-->
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-8 left-section">
@@ -63,17 +63,19 @@
 
                 <form action="" class="signIn-form" id="login">
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control txtuser" id="email">
                     </div>
                     <div class="form-group">
-                        <label for="pwd">Password:</label>
-                        <input type="password" class="form-control" id="pwd">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control txtpass" id="pwd">
                     </div>
-                    <p class="forgot"><a href="#forgottenPassword">Forgotten Password</a> ?</p>
-                <button type="submit" class="btn btn-light text-center" id="button">Login</button>
+                    <p class="forgot"><a href="#forgottenPassword">Forgotten Password?</a></p>
+                <button type="button" class="btn btn-light text-center submit" id="button" onclick="getInfo()">Login</button>
+                <p class="message pt-4 text-danger"></p>
                 </form>
             </div>
+            <!--SIGN IN FORM-->
 
             <!--REGISTRATION FORM-->
             <div class="register-content" id="reg-content">
@@ -103,10 +105,12 @@
                     <button type="submit" class="btn btn-light text-center" id="submit-button">Submit</button>
                 </form>
             </div>
+            <!--REGISTRATION FORM-->
         </div>
     </div>
 </div>
 
+<!--FOOTER-->
 <div class="footer">
     <div class="social-media-icons">
         <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon fa-2x"></i></a>
@@ -114,8 +118,8 @@
         <a href="https//www.instagram.com/"><i class="fab fa-instagram icon fa-2x"></i></a>
     </div>
     <p>Copyright | MooVee | 2019</p>
-
 </div>
+<!--FOOTER-->
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

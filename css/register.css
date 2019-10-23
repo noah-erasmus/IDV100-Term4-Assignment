@@ -156,6 +156,18 @@ margin-bottom: 100px;
     transform: scale(1.1);
 }
 
+#userAccountLogin{
+    height: 45px;
+    width: 45px;
+    background-color: grey;
+    border-radius: 25px;
+}
+
+#userAccountLogin i{
+    color: red;
+    text-align: center;
+}
+
 .forgot {
     float: right;
 }
