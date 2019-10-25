@@ -153,12 +153,16 @@
 .overlay{
     width: 155px;
     height: 210px;
-    display: none;
-    position: fixed;
+    opacity: 0;
+    position: absolute;
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.overlay:hover{
+    opacity: 1;
 }
 
 .overlay h3{
@@ -259,11 +263,29 @@
     .entry-details p{
         font-size: 11px;
     }
+    
+    .entry-poster{
+        height: 60%;
+    }
+    
+    .overlay{
+        width: 85px;
+        height: 145px;
+    }
+    
+    .overlay h3{
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){       /* MEDIUM SCREENS */
     .entry-line{
         height: 250px;
+    }
+    
+    .overlay{
+        width: 125px;
+        height: 175px;
     }
 }
 
