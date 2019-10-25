@@ -150,6 +150,22 @@
     border-radius: 5px;
 }
 
+.overlay{
+    width: 155px;
+    height: 210px;
+    display: none;
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.overlay h3{
+    color: white;
+    margin-top: 10%;
+}
+
 .entry-details{
     width: 100%;
     height: 40px;
@@ -174,17 +190,21 @@
 .entry-details p{
     margin-bottom: 0;
     font-size: 12px;
+    font-weight: 700;
 }
 
-.entry-btns{
+.overlay-btns{
     height: 50px;
     width: 100%;
     text-align: center;
+    bottom: 0;
+    position: absolute;
 }
 
-.entry-btns p{
+.overlay p{
     font-size: 12px;
     font-weight: 400;
+    margin-top: 5%;
 }
 
 .add-watchlist-btn{
@@ -195,6 +215,13 @@
     background-color: #dc2543;
     color: white;
     float: right;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+
+.add-watchlist-btn:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 .read-more-btn{
@@ -205,21 +232,32 @@
     background-color: #dc2543;
     color: white;
     float: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer
+}
+
+.read-more-btn:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 @media (max-width: 768px){      /* XSMALL SCREENS */
     .entry-line{
-        height: 200px;
+        height: 150px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px){       /* SMALL SCREENS */
     .entry-line{
-        height: 200px;
+        height: 240px;
     }
     
     .select-label{
         font-size: 16px;
+    }
+    
+    .entry-details p{
+        font-size: 11px;
     }
 }
 
