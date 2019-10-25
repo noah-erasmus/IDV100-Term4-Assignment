@@ -21,7 +21,52 @@ overflow: hidden;
     color: white;
     padding-left: 55px;
     padding-right: 55px;
+}
 
+/*Forms*/
+.login{}
+
+.register-content{
+    display: none;
+}
+
+.login-content{}
+
+.register-content{}
+
+#name{
+    background-color: black;
+    border-radius: 50px;
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    color: white;
+
+}
+
+#surname{
+    background-color: black;
+    border-radius: 50px;
+    height: 45px;
+    width: 300px;
+    text-align: center;
+    color: white;
+
+}
+
+
+#reg-content {
+    /* border: 1px solid yellow; */
+    /* float: left; */
+}
+
+#log-content {
+    /* border: 1px solid red; */
+    /* float: left; */
+}
+
+.callToAction{
+    
 }
 
 #email{
@@ -56,6 +101,20 @@ margin-top: 30px;
 margin-bottom: 100px;
 }
 
+#submit-button {
+    background-color: red;
+    border-radius: 50px;
+    border: none;
+    height: 45px;
+    color: white;
+    font-family: 'Archivo';
+    font-size: large;
+    text-transform: uppercase;
+    width: 125px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
 #button:hover{
     transform: scale(1.05);
     background: transparent;
@@ -86,7 +145,7 @@ margin-bottom: 100px;
     text-decoration: none;
 }
 .humberger-toggler.navbar-toggler{
-    border-color: red;
+    border-color: black;
 }
 
 .navbar-brand img{
@@ -97,6 +156,17 @@ margin-bottom: 100px;
     transform: scale(1.1);
 }
 
+#userAccountLogin{
+    height: 45px;
+    width: 45px;
+    background-color: grey;
+    border-radius: 25px;
+}
+
+#userAccountLogin i{
+    color: red;
+    text-align: center;
+}
 
 .forgot {
     float: right;
@@ -104,8 +174,9 @@ margin-bottom: 100px;
 
 .footer{
     background-color:red;
-    height: 6.5em;
+    height: 95px;
     color: white;
+
 }
 
 .footer p{
