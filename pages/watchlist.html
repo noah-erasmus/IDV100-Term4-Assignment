@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- 
-    Below you will see an example of a mobile responsive navigation bar.
-    * Add the class navbar-dark bg-dark in the nav to change it to bootstrap dark theme. alternatively you can use navbar-light bg-light.
--->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,16 +16,16 @@
     <!-- Main.CSS-->
     <link rel="stylesheet" href="../css/watchlist.css">
     <!--Font Awesome Icons-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-
-    <!--THE MOVIE DATA BASE-->
-    <script type="text/javascript" src="../js/watchlist.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
+
+<!-- //////////////////////////////////////////////////////////// -->
 
 <body>
     <!-------Navigation-->
     <nav class="navbar navbar-expand-md navbar-dark">
-        <a href="#" class="navbar-brand"><img src="" alt="moovee logo"></a>
+        <a href="#" class="navbar-brand"><img src="" alt=""></a>
         <button type="button" class="navbar-toggler humberger-toggler" data-toggle="collapse"
             data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -39,9 +34,8 @@
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
                 <a href="#" class="nav-item nav-link active">Home</a>
-                <a href="#" class="nav-item nav-link">Movies</a>
-                <a href="#" class="nav-item nav-link">Series</a>
-                <a href="#" class="nav-item nav-link">Favourites</a>
+                <a href="#" class="nav-item nav-link">Library</a>
+                <a href="#" class="nav-item nav-link">Watchlist</a>
             </div>
             <div class="navbar-nav ml-auto">
                 <a href="#" class="nav-item nav-link">Login</a>
@@ -49,56 +43,27 @@
         </div>
     </nav>
 
-    <div class="container-fluid main-content-container">
-        <div class="jumbotron jumbotron-fluid"><!--JUMBOTRON TOP-->
-            <div class="container">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
-                </p>
-            </div>
-        </div>
-        <div class="row movies-watchlist">Movies
-            <div class="col">
-                <h2>Movies</h2>
-                <div class="movies-poster-container">
-                    <h2>Title</h2>
-                    <h3>Subheading</h3>
-                    <p>Paragraph Info</p>
-                </div>
-                <div class="movies-poster-container">
-                    <div class="img-holder"><img src="" alt=""></div>
-                    <h2>Title</h2>
-                    <h3>Subheading</h3>
-                    <p>Paragraph Info</p>
-                </div>
-                <div class="movies-poster-container">
-                    <h2>Title</h2>
-                    <h3>Subheading</h3>
-                    <p>Paragraph Info</p>
-                </div>
-                <div class="movies-poster-container">
-                    <h2>Title</h2>
-                    <h3>Subheading</h3>
-                    <p>Paragraph Info</p>
-                </div>
-            </div>
-        </div>
-        <div class="row series-watchlist">Series
-            <div class="col">
-                <h2>Series</h2>
-            </div>
-        </div>
-    </div>
+    <div class="container-fluid main-container" style="background-color: blue; height: 100vh;">
 
-    <div class="footer">
-        <div class="social-media-icons">
-            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon fa-2x"></i></a>
-            <a href="https://www.twitter.com/"><i class="fab fa-twitter icon fa-2x"></i></a>
-            <a href="https//www.instagram.com/"><i class="fab fa-instagram icon fa-2x"></i></a>
+        <!--NOAHS CODE FOR THE MOVIE ENTRY-->
+        <!-- //////////////////////////////////////////////////////// -->
+        <div class='entry col-xs-4 col-sm-2 col-md-2 col-lg-2'>
+            <div class='overlay'>
+                <h3 class='entry-rating'>" + vote_average + "</h3>
+                <h3 class='entry-genre'>" + genre_ids + "</h3>
+                <div class='overlay-btns'><a class='#MOVIE'>
+                        <div class='read-more-btn'>
+                            <p>Read <br>More</p>
+                        </div></a>
+                        <a><div class='remove-watchlist-btn'><p>Remove</p></div></a></div>
+            </div>
+            <div class='entry-poster'><img src='" + poster_path + "'></div>
+            <div class='entry-details'>
+                <p class='entry-title'>" + original_title + "</p>
+                <p class='entry-release'>" + release_date + "</p>
+            </div>
         </div>
-        <p>Copyright | MooVee | 2019</p>
-
-    </div>
+    </div><!-- ////////////////////////////////////////////////////// -->
 
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -111,6 +76,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <!--Javascript file-->
+    <script type="text/javascript" src="../js/watchlist.js"></script>
 
 </body>
 

@@ -11,7 +11,7 @@ $(function(){
     });
 });
 $(function () {
-    $('#toggler-button2').on('click', function (e) {
+    $('#toggler-button2').on('click', function(e){
         $('.register-content').css('display', 'none');
         $('.login-content').css('display', 'inline');
         e.preventDefault();
@@ -41,17 +41,17 @@ if(window.localStorage){
 
     submit.addEventListener("click",()=>{
         if(user == txtuser.value && pass == txtpass.value){
-            message.innerHTML = "Login Successful Bro!";
+            message.innerHTML = "Login Successful!";
             setTimeout(function () {window.location.href = "../index.html";}, 1000);// Redirect to index page after successful login
         }else{
-            message.innerHTML = "Username or Password is Invalid!";
+            message.innerHTML = "Username or Password is Invalid!";//Warning Message
 
         }
     });
 
-}else{
-    console.log("Local Storage Not Supported!"); //No
-}
+// }else{
+//     console.log("Local Storage Not Supported!"); //No
+};
 
 // ################TO DO LIST ######################
 // 1. on login change the user name to show on top right corner depending on which user is logged in. - localstorage user name.

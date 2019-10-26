@@ -1,38 +1,35 @@
-.navbar{
+.navbar {
     background-color: red;
+    color: white;
 }
 
-.container-fluid{
-    padding: 0;
-    margin: 0;
+
+.movie-box{
+  background-color: honeydew;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.movies-watchlist{
-    background-color: grey;
-    height: 50vh;
-    width: 100%;
-
+.movie-box-title h2{
+  text-align: center;
+  margin: 0 auto;
+  background-color: pink;
 }
 
-.img-holder{
-    background-color: red;
-    height: 60px;
-    width: 60px;
-    border-radius: 30px;
-}
+/* .box-img{
+  height: 150px;
+  width: 125px;
+  border-radius: 5px;
+  background-color: orange;
+  text-align: center;
+} */
 
-.series-watchlist{
-    background-color: blue;
-    height: 50vh;
-    width: 100%;
-
-}
-
-.movies-poster-container{
-    width: 280px;
-    height: 220px;
-    border: blueviolet 2px solid;
-    background-color: powderblue;
-    display: inline-block;
-    margin: 0 auto;
+.box-cover{
+  background-color: powderblue;
+  height: 190px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid grey;
 }

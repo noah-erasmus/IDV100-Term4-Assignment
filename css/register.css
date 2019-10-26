@@ -1,6 +1,7 @@
 
 .left-section{
-background-image: url(../img/karen-zhao-jLRIsfkWRGo-unsplash.jpg);
+    background-color: white;
+/* background-image: url(../img/karen-zhao-jLRIsfkWRGo-unsplash.jpg); */
 height: 85vh;
 background-position: top;
 background-repeat: no-repeat;
@@ -10,17 +11,18 @@ overflow: hidden;
 
 .left-sec-content {
     z-index: 1;
-    color: white;
+    color: black;
     margin-top: 200px;
     text-align: center;
 }
 
 .login-section{
     position: relative;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding-left: 55px;
     padding-right: 55px;
+    padding-top: 30px;
 }
 
 /*Forms*/
@@ -41,10 +43,9 @@ overflow: hidden;
     width: 300px;
     text-align: center;
     color: white;
-
 }
 
-#surname{
+/* #surname{
     background-color: black;
     border-radius: 50px;
     height: 45px;
@@ -52,7 +53,7 @@ overflow: hidden;
     text-align: center;
     color: white;
 
-}
+} */
 
 
 #reg-content {
@@ -65,26 +66,22 @@ overflow: hidden;
     /* float: left; */
 }
 
-.callToAction{
-    
-}
-
 #email{
-    background-color: black;
+    background-color: white;
     border-radius: 50px;
     height: 45px;
     width: 300px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #pwd {
-    background-color: black;
+    background-color: white;
     border-radius: 50px;
     height: 45px;
     width: 300px;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 #button{
@@ -123,10 +120,10 @@ margin-bottom: 100px;
 }
 
 .navbar{
-    background-color: black;
+    background-color: red;
 }
 #navbarCollapse a{
-    color: red;
+    color: black;
     text-align: center;
 }
 
@@ -140,8 +137,8 @@ margin-bottom: 100px;
     font-weight: bold;
 }
 .navbar a{
-    background-color: black;
-    color: red;
+    background-color: red;
+    color: black;
     text-decoration: none;
 }
 .humberger-toggler.navbar-toggler{

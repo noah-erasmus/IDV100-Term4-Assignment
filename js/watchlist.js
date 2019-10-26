@@ -1,38 +1,17 @@
-//API KEY https://api.themoviedb.org/3/movie/550?api_key=3b877e38df9daff06def35c184995a4e
+$(function () {
 
-//Use the the following key to for The Open Movie Database
-
-
-
-//Code example from the tutorial in class.
-$(function(){
-
-    var apiRequest = new XMLHttpRequest();
-
-    apiRequest.open('GET', "https://api.themoviedb.org/3/movie/550?api_key=3b877e38df9daff06def35c184995a4e", true);
-
-    apiRequest.send();
-
-    console.log(apiRequest);
+    var movieName = localStorage.getItem("movieName");
+    var imageID = localStorage.getItem("imageID1");
+    var imageSource = localStorage.getItem("imageSource1");
+    var releaseDate = localStorage.getItem("releaseDate");
+    var imdbRating = localStorage.getItem("imdbRating");
+    var movieGenre = localStorage.getItem("movieGenre");
 
 
-})
-
-//Code example from the developers guide on the website....
-var data = "{}";
-
-var xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-
-xhr.addEventListener("readystatechange", function () {
-    if (this.readyState === this.DONE) {
-        console.log(this.responseText);
-    }
+    $("#movieName").text(movieName);
+    $("#imageID1").text(imageID);
+    $("#imageSource1").attr('src', imageSource);
+    $("#releaseDate").text(releaseDate);
+    $("#imdbRating").text(imdbRating);
+    $("#movieGenre").text(movieGenre);
 });
-
-xhr.open("GET", "https://api.themoviedb.org/3/movie/550?api_key=3b877e38df9daff06def35c184995a4e");
-
-xhr.send(data);
-
-
-
