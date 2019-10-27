@@ -1,35 +1,232 @@
-.navbar {
+.body {
+  position: relative;
+  font-family:
+    'Roboto','Helvetica','Arial',sans-serif;
+}
+
+.header-container{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.header-container h1{
+    float: left;
+}
+
+/* LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY */
+.refresh-btn{
+    width: 50px;
+    height: 20px;
     background-color: red;
+    float: right;
+    cursor: pointer;
+}
+
+.refresh-btn p{
     color: white;
 }
 
-
-.movie-box{
-  background-color: honeydew;
-  height: 250px;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
+.entry-line{
+    height: 300px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-.movie-box-title h2{
-  text-align: center;
-  margin: 0 auto;
-  background-color: pink;
+.entry{
+    height: 100%;
+    margin: auto;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
-/* .box-img{
-  height: 150px;
-  width: 125px;
-  border-radius: 5px;
-  background-color: orange;
-  text-align: center;
-} */
+.entry-poster{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 70%;
+    border-radius: 5px;
+    position: relative;
+}
 
-.box-cover{
-  background-color: powderblue;
-  height: 190px;
-  width: 200px;
-  border-radius: 5px;
-  border: 1px solid grey;
+.entry-poster img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.overlay{
+    width: 155px;
+    height: 210px;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+.overlay h3{
+    color: white;
+    margin-top: 10%;
+}
+
+.entry-details{
+    width: 100%;
+    height: 40px;
+}
+
+.details-left{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.entry_title{
+    overflow: hidden;
+}
+
+.details-right{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+.entry-details p{
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.overlay-btns{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    position: absolute;
+}
+
+.overlay p{
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 5%;
+}
+
+.add-watchlist-btn{
+    height: 90%;
+    width: 47.5%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #dc2543;
+    color: white;
+    float: right;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+}
+
+.add-watchlist-btn:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.read-more-btn{
+    height: 90%;
+    width: 47.5%;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #dc2543;
+    color: white;
+    float: left;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer
+}
+
+.read-more-btn:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.watchlist-area{
+    width: 100%;
+    height: auto;
+}
+
+.watchlist-entry{
+    width: 100%;
+    height: 100px;
+    background-color: #CBCBCB;
+    border-top: 2px black;
+    border-bottom: 2px black;
+}
+
+.watchlist-poster{
+    height: 100%;
+}
+
+.watchlist-poster img{
+    height: 100%;
+}
+
+.remove-btn{
+    border-radius: 5px;
+    background-color: #dc2543;
+    color: white;
+    margin: auto;
+    height: 50%;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){      /* XSMALL SCREENS */
+    .entry-line{
+        height: 150px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){       /* SMALL SCREENS */
+    .entry-line{
+        height: 240px;
+    }
+    
+    .select-label{
+        font-size: 16px;
+    }
+    
+    .entry-details p{
+        font-size: 11px;
+    }
+    
+    .entry-poster{
+        height: 60%;
+    }
+    
+    .overlay{
+        width: 85px;
+        height: 145px;
+    }
+    
+    .overlay h3{
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){       /* MEDIUM SCREENS */
+    .entry-line{
+        height: 250px;
+    }
+    
+    .overlay{
+        width: 125px;
+        height: 175px;
+    }
+}
+
+@media (min-width: 1200px){         /* LARGE SCREENS */
+    .entry-line{
+        height: 300px;
+    }
 }
