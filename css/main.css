@@ -145,6 +145,49 @@ h3.heading{
     }
 }
 
+.glyphicon-arrow-left {
+    font-size:20px;
+    color: white;
+}
+
+.glyphicon-plus {
+    font-size:15px;
+    color: white;
+}
+.glyphicon-play{
+    font-size:100px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px; 
+}
+
+.glyphicon-star {
+    font-size:60px;
+    color: white;
+}
+
+.glyphicon-play {
+    -webkit-animation: glyphicon-spin-r 2s infinite linear;
+    animation: glyphicon-spin-r 2s infinite linear;
+}
+
+@-webkit-keyframes glyphicon-spin-r {
+   0% {
+   -webkit-transform: scale(1.0) rotate(0deg);
+ }
+ 33% {
+   -webkit-transform: scale(1.1) rotate(-5deg);
+ }
+ 67% {
+   -webkit-transform: scale(1.1) rotate(5deg);
+ }
+ 100% {
+   -webkit-transform: scale(1.0) rotate(0deg);
+ }
+}
+
+
+
 /*section use to set transformation setting*/
     
 >>>>>>> 366f5061e578f1a2f93350459386a09c5122c64f
