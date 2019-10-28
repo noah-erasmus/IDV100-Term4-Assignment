@@ -247,7 +247,28 @@
 
 @media (max-width: 768px){      /* XSMALL SCREENS */
     .entry-line{
-        height: 150px;
+        height: 170px;
+    }
+    
+    .entry-details p{
+        font-size: 10px;
+    }
+    
+    .overlay{
+        width: 55px;
+        height: 105px;
+    }
+    
+    .overlay h3{
+        font-size: 12px;
+    }
+    
+    .overlay-btns{
+        height: 30px;
+    }
+    
+    .entry-poster{
+        height: 50%;
     }
 }
 
