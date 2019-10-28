@@ -141,6 +141,18 @@ h3.heading{
     height: 3px;
 }
 
+.divider-logo{
+    height:100%;
+    width: 100%;
+    
+}
+.col-auto{
+    margin: 0;
+    padding: 0;
+    width: 5%;
+    
+}
+
 .get-moovee-image img{
     width: 95%;
     height: 70%;
