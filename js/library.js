@@ -17,10 +17,5 @@ $(function(){
             
             createEntries(poster_path, original_title, vote_average, genre_ids, release_date);
         }
-        $(".add-watchlist-btn").on("click",function(){
-            var storageReference = $(this).closest().find(".entry-title").text();
-            console.log(storageReference);
-            debugger;
-        })
     }
 })
