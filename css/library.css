@@ -75,7 +75,7 @@
 }
 
 .select-text:focus ~ .select-label, .select-text:valid ~ .select-label {
-	color: #2F80ED;
+	color: #dc2543;
 	top: -20px;
 	transition: 0.2s ease all;
 	font-size: 14px;
@@ -93,7 +93,7 @@
 	width: 0;
 	bottom: 1px;
 	position: absolute;
-	background: #2F80ED;
+	background: #dc2543;
 	transition: 0.2s ease all;
 }
 
@@ -247,7 +247,28 @@
 
 @media (max-width: 768px){      /* XSMALL SCREENS */
     .entry-line{
-        height: 150px;
+        height: 170px;
+    }
+    
+    .entry-details p{
+        font-size: 10px;
+    }
+    
+    .overlay{
+        width: 55px;
+        height: 105px;
+    }
+    
+    .overlay h3{
+        font-size: 12px;
+    }
+    
+    .overlay-btns{
+        height: 30px;
+    }
+    
+    .entry-poster{
+        height: 50%;
     }
 }
 

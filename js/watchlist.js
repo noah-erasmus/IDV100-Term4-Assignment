@@ -1,17 +1,29 @@
 $(function () {
 
-    var movieName = localStorage.getItem("movieName");
-    var imageID = localStorage.getItem("imageID1");
-    var imageSource = localStorage.getItem("imageSource1");
+    var title = localStorage.getItem("title");
+    var imagePath = localStorage.getItem("imagepath");
+    var rating = localStorage.getItem("rating");
+    var genre = localStorage.getItem("genre");
     var releaseDate = localStorage.getItem("releaseDate");
-    var imdbRating = localStorage.getItem("imdbRating");
-    var movieGenre = localStorage.getItem("movieGenre");
-
-
-    $("#movieName").text(movieName);
-    $("#imageID1").text(imageID);
-    $("#imageSource1").attr('src', imageSource);
-    $("#releaseDate").text(releaseDate);
-    $("#imdbRating").text(imdbRating);
-    $("#movieGenre").text(movieGenre);
+    
+    var duplicateCheck = ""
+    
+    function createEntries(imagePath, title, rating, genre, releaseDate){
+        $(".watchlist-area").append("<div class='watchlist-entry row'><div class='watchlist-poster col-sm-2'><img src='" + imagePath + "'></div><div class='watchlist-title col-sm-4'><h3>" + title + "</h3><h4>" + releaseDate + "</h4></div><div class='watchlist-rating col-sm-2'><h3>" + rating + "</h3></div><div class='watchlist-genre col-sm-2'><h3>" + genre + "</h3></div><div class='remove-btn col-sm-1'><p>Remove</p></div></div>");
+    }
+    
+    $(document).on("ready", function(){
+        if(title !== duplicateCheck){
+            createEntries(imagePath, title, rating, genre, releaseDate);
+            duplicateCheck = title;
+        }
+    })
+    
+    $(".refresh-btn").on("click", function(){
+        if(title !== duplicateCheck){
+            createEntries(imagePath, title, rating, genre, releaseDate);
+            duplicateCheck = title;
+        }
+        
+    })
 });
