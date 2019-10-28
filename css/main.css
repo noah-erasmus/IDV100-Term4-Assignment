@@ -137,6 +137,10 @@ h3.heading{
 }
 
 
+.divider-line row{
+    height: 3px;
+}
+
 .get-moovee-image img{
     width: 95%;
     height: 70%;
@@ -150,19 +154,25 @@ h4{
 }
 
 .message-container{
-    background-color: antiquewhite;
+    
     height: 500px;
    
 }
 
 .get-moovee-image{
-    background-color: aqua;
+    
     height: 100%;
 
 }
 
 .did-you-know{
-    background-color: aquamarine;
+    
+    height: 100%;
+}
+
+.did-you-know img{
+    width: 100%;
+    height: 80%;
 }
 
 .social-media-container{
