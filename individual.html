@@ -1,7 +1,11 @@
 <!Doctype html>
 <html>
      <head>
+         
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <scrpt src="3.3.6/js/bootstrap.min.js"></scrpt>
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
           <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
           <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
           <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -16,10 +20,47 @@
           <script src="js/main.js"></script>
      </head>
      <body>
-               <div class="condensed-info ">
-                   <div class="add-to">
+         
+          <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">Moovee</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Library</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Watchlist</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Sign in/Sign up</a>
+                </li>
+              
+              
+            </ul>
+          </div>
+        </nav>
+        
+              <div class="return">
+             <a href="pages/library.html">
+              <button type="button" class="return-btn" class="btn">
+                   <span class="glyphicon glyphicon-arrow-left"></span>
+             </button>
+                 </a>
+         </div>
+         
+         <div class="container">
+  <div class="row">
+    <div class="col-sm">
+       <button class="add-to" class="btn btn-col-sm-4">
                         <span class="glyphicon glyphicon-plus"></span>
-                   </div>
+                   </button>
                    <div class="stars">
                         <span class="glyphicon glyphicon-star"></span>
                          <div class="rating"><p class="rating-score">7,3/10</p>
@@ -29,7 +70,9 @@
                         <div class="duration"><p class="screen-duration">2h 27min</p></div>
                         <div class="genre"><p class="screen-genre">Drama, History and Horror</p></div>
                    </div>
-                    <div class="celeb-info">
+    </div>
+    <div class="col-sm">
+         <div class="celeb-info" data-toggle="collapse">
                         <p class="director">Director: Ari Aster</p>
                         <p class="writer">Writer: Ari Aster</p>   
                         <p class="actors">Stars: Florence Pugh, Jack Reynor, Vilhelm Blomgren</p>    
@@ -42,14 +85,23 @@
                          <div class="year-part"><p class="year-type">2019</p></div>
                          <p class="bracket-two">]</p>
                     </div>
-                    <div class="movie-title ">
+    </div>
+    <div class="col-sm">
+         <div class="movie-title ">
                         <p class="movie-title">MIDSOMMAR</p>
                    </div>
 
                    <div class="movie-poster">
-                            <span class="glyphicon glyphicon-repeat fast-right-spinner"></span>  
+                          <a href="https://www.youtube.com/user/VideoIMDb/videos">
+                            <span class="glyphicon glyphicon-play"></span>  
+                           </a>   
                    </div>
                
-          </div>
+    </div>
+  </div>
+</div>
+         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      </body>
 </html>

@@ -4,9 +4,37 @@ body {
     padding:0;
 }
 
-.condensed-info {
+
+.container {
+    background-color: yellow;
+}
+
+
+.col-6 {
+  height:100px;  
+  background-color: aquamarine;
+}
+
+.col-12 {
+  height:100px;  
+  background-color: pink;
+}
+.return {
     width:100%;
-    margin-top: 200px;
+    height:80px;
+    padding-top: 20px;
+}
+
+.return-btn {
+    width:150px;
+    height:40px;
+    margin-left: 20px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: black;
+}
+.background-poster{
+    width:100%;
+    margin-top: 100px;
     height:400px;
     padding-top: 50px;
     background-image: url(../img/midsommer%20background.jpeg);
@@ -122,21 +150,25 @@ body {
 }
 
 .add-to {
-    width:80px;
-    height:80px;
+    width:50px;
+    height:50px;
     border-radius: 50%;
     margin-top: -110px;
-    margin-left: 1250px;
+    border: none;
+    margin-left: 1300px;
     background-color:  black;
 }
 
-.glyphicon-plus {
-    font-size:30px;
+.glyphicon-arrow-left {
+    font-size:20px;
     color: white;
-    margin-top: 25px;
-    margin-left: 25px; 
 }
-.glyphicon-repeat {
+
+.glyphicon-plus {
+    font-size:15px;
+    color: white;
+}
+.glyphicon-play{
     font-size:100px;
     color: white;
     margin-top: 50px;
@@ -148,33 +180,24 @@ body {
     color: white;
 }
 
-.glyphicon.fast-right-spinner {
+.glyphicon-play {
     -webkit-animation: glyphicon-spin-r 2s infinite linear;
     animation: glyphicon-spin-r 2s infinite linear;
 }
 
 @-webkit-keyframes glyphicon-spin-r {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
-}
-
-@keyframes glyphicon-spin-r {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-
-    100% {
-        -webkit-transform: rotate(359deg);
-        transform: rotate(359deg);
-    }
+   0% {
+   -webkit-transform: scale(1.0) rotate(0deg);
+ }
+ 33% {
+   -webkit-transform: scale(1.1) rotate(-5deg);
+ }
+ 67% {
+   -webkit-transform: scale(1.1) rotate(5deg);
+ }
+ 100% {
+   -webkit-transform: scale(1.0) rotate(0deg);
+ }
 }
 
 
@@ -182,8 +205,7 @@ body {
     width:200px;
     height:200px;
     border-radius: 50%;
-    border-radius: 50%;
-    margin-top: -50px;
+    margin-top: -150px;
     margin-left: 600px;
     background-image:url(../img/MV5BMzQxNzQzOTQwM15BMl5BanBnXkFtZTgwMDQ2NTcwODM@._V1_.jpg);
     background-size: cover;
@@ -206,7 +228,6 @@ body {
 .year {
     width:100%;
     height:70px;
-    margin-top: 50px;
     float: left;
 }
 
