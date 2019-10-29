@@ -1,39 +1,76 @@
 <!doctype html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- Javascript -->
+        <script src="../js/genres.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="../js/watchlist.js"></script>
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="../css/watchlist.css">
+    </head>
+    <body onload="showWatchlist()">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger" style="background-color: red">
+          <a class="navbar-brand" href="#">MOOVEE</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Google Fonts CSS -->
-    <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet">
-    
-    <!-- Main.CSS-->
-    <link rel="stylesheet" href="css/main.css">
-
-    <title>Library</title>
-</head>
-
-<body>
-    <h1>Hello, world!</h1>
-
-    <!-- JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    
-</body>
-
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="library.html">Library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="watchlist.html">Watchlist</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        
+        <div class="container">
+            
+            <div class="header-container row">
+                <h1>Watchlist</h1>
+                <div class="refresh-btn">
+                    <p>Refresh</p>
+                </div><!--refresh-btn-->
+            </div><!--header-container-->
+            
+            <div class="watchlist-area">
+                <div class="watchlist-entry row">
+                    <div class="watchlist-poster col-sm-2">
+                        <img src="../img/blade_runner.jpg">
+                    </div><!--watchlist-poster-->
+                    <div class="watchlist-title col-sm-4">
+                        <h3>Blade Runner</h3>
+                        <h4>2018</h4>
+                    </div><!--watchlist-title-->
+                    <div class="watchlist-rating col-sm-2">
+                        <h3>4/5</h3>
+                    </div><!--watchlist-rating-->
+                    <div class="watchlist-genre col-sm-2">
+                        <h3>Sci Fi</h3>
+                    </div><!--watchlist-genre-->
+                    <div class="remove-btn col-sm-1">
+                        <p>Remove</p>
+                    </div><!--remove-btn-->
+                </div><!--watch-list-entry-->
+            </div><!--watchlist-area-->
+            
+        </div><!--container-->
+    </body>
 </html>
