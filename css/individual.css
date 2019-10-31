@@ -63,7 +63,9 @@ body {
     margin-left: 8%;
     height:350px;
     border-radius: 5px 5px 5px 5px;
-    background-color: aqua;
+    background-image: url(../img/blade_runner.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .rectangle {
@@ -73,6 +75,15 @@ body {
     background-color: fuchsia;
 }
 
+
+.cover {
+    background-image: url(../img/blade%20runner%20back%20drop.jpg);
+    background-size: auto;
+    background-position: center;
+    width:100%;
+    margin-top: 30px;
+    height:250px;
+}
 .col-md-4 {
   width:80%;  
   height:auto; 
@@ -84,10 +95,21 @@ body {
     width:250px;
     margin-top:5%;
     margin-left: 8%;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-size: 25px;
+    color: lightcoral;
     height:auto;
-    background-color: yellow;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.vote-average {
+    width:250px;
+    margin-left:8%;
+    letter-spacing: 4px;
+    font-size: 25px;
+    color: lightcoral;
+    height:auto;
+    font-family: 'Archivo Black', sans-serif;
 }
 
 .trailer {
