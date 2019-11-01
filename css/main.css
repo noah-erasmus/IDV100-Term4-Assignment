@@ -48,9 +48,6 @@ body{
     z-index: 999999;
 }
 
-
-
-
 .btn-md{
     border-width: medium;
     border-radius: 0;
@@ -141,6 +138,18 @@ h3.heading{
     height: 3px;
 }
 
+.divider-logo{
+    height:100%;
+    width: 100%;
+    
+}
+.col-auto{
+    margin: 0;
+    padding: 0;
+    width: 5%;
+    
+}
+
 .get-moovee-image img{
     width: 95%;
     height: 70%;
@@ -213,10 +222,56 @@ h5{
     }
 }
 
+<<<<<<< HEAD
+.glyphicon-arrow-left {
+    font-size:20px;
+    color: white;
+}
+
+.glyphicon-plus {
+    font-size:15px;
+    color: white;
+}
+.glyphicon-play{
+    font-size:100px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 50px; 
+}
+
+.glyphicon-star {
+    font-size:60px;
+    color: white;
+}
+
+.glyphicon-play {
+    -webkit-animation: glyphicon-spin-r 2s infinite linear;
+    animation: glyphicon-spin-r 2s infinite linear;
+}
+
+@-webkit-keyframes glyphicon-spin-r {
+   0% {
+   -webkit-transform: scale(1.0) rotate(0deg);
+ }
+ 33% {
+   -webkit-transform: scale(1.1) rotate(-5deg);
+ }
+ 67% {
+   -webkit-transform: scale(1.1) rotate(5deg);
+ }
+ 100% {
+   -webkit-transform: scale(1.0) rotate(0deg);
+ }
+}
+
+
+
+=======
 .carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover{
     z-index: 999999 !important;
 }
 
+>>>>>>> 61b897fae0fc1c0a21710cf62e4f2c8a1d00411f
 /*section use to set transformation setting*/
     
 
