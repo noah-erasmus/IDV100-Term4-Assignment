@@ -106,7 +106,7 @@ h3.heading{
     font-weight: 700;
     text-transform: uppercase;
     padding-bottom: 0.5rem;
-    padding-top: 50px;
+    padding-top: 80px;
 }
 
 .heading-underline{
@@ -116,16 +116,6 @@ h3.heading{
     margin: 0 auto 1rem;
 }
 
-.portfolio img{
-    width: 100%;
-    transition: transform .5s ease;
-}
-
-
-.portfolio{
-    overflow: hidden !imo;
-    margin: 10px 10px 10px 10px;
-}
 
 .row.no-padding [class*=col-]{
     padding: 0;
@@ -218,5 +208,34 @@ h5{
 }
 
 /*section use to set transformation setting*/
+
+
+/*portfoilo code for API*/
+
+
+.portfolio{
+    background-size: contain;
+    background-position: center;
+    height: 300px;
+}
+
+.portfolio img{
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio a{
+    width: 100%;
+    height: 70%;
+}
+
+.portfolio h2{
+    height: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+}
     
 
