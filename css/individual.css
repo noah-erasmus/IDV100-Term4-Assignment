@@ -60,12 +60,36 @@ body {
     margin-left: 8%;
     height:350px;
     border-radius: 5px 5px 5px 5px;
-    background-image: url(../img/blade_runner.jpg);
+}
+
+img {
+    width:250px;
+    height:350px;
+    border-radius: 5px 5px 5px 5px;
     background-size: cover;
     background-position: center;
 }
 
+.date {
+    width:auto;
+    height:auto;
+    margin-left: 20%;
+    margin-right: 20%;;
+    background-color: aquamarine;
+    
+}
+
+.movie-genre {
+    width:auto;
+    height:auto;
+    margin-top: 70px;
+    margin-left: 20%;
+    margin-right: 20%;;
+    background-color: hotpink;
+    
+}
 .rectangle {
+    padding-top: 12%;
     width:350px;
     margin-top:1.5%;
     height:350px;
@@ -102,6 +126,32 @@ body {
     background-color: white;
     font-family: 'Archivo Black', sans-serif;
 }
+
+.the-date {
+    width:250px;
+    margin-top:5%;
+    margin-left: 8%;
+    letter-spacing: 4px;
+    font-size: 25px;
+    color: lightcoral;
+    height:auto;
+    background-color: white;
+    font-family: 'Archivo Black', sans-serif;
+}
+
+
+.the-genre {
+    width:250px;
+    margin-top:5%;
+    margin-left: 8%;
+    letter-spacing: 4px;
+    font-size: 25px;
+    color: lightcoral;
+    height:auto;
+    background-color: white;
+    font-family: 'Archivo Black', sans-serif;
+}
+
 
 .vote-average {
     width:250px;
