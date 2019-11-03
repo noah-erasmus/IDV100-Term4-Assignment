@@ -30,8 +30,8 @@ $(function (){
 // Write a function that gets the values of the username and password inputs. Log both to the console...
     $(".loginButton").on("click", function () {
 
-         var username = $("#usernameInput").val();
-         var password = $("#passwordInput").val();
+        var username = $("#usernameInput").val();
+        var password = $("#passwordInput").val();
 
 
         console.log(username);
@@ -50,6 +50,7 @@ localStorage.setItem("activeUser", username);
     }
 // if a user match occurs the set the localstroage "loggedInUser" to the username from the input 
 // Get the local storage name and then go to town...
+
 });
 });
 
