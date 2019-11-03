@@ -15,6 +15,8 @@
     <!-- Main.CSS-->
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/library.css">
+    
     <!--Font Awesome Icons-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -44,34 +46,40 @@
     <!--header-->
     
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">Moovee</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
+          <a class="navbar-brand" href="#">
+              <img src="img/logo.png">
+            </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-lg-auto">
-                <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="pages/library.html">Library</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="pages/watchlist.html">Watchlist</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="pages/register.html">Sign in/Sign up</a>
-                </li>
-              
-              
-            </ul>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav w-100">
+              <li class="nav-item active">
+                <a class="nav-link link-nav" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-nav" href="pages/library.html">Library</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-nav" href="pages/watchlist.html">Watchlist</a>
+              </li>
+              <li class="nav-item dropdown ml-auto">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="img/user-1.png">
+                </a>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Account Settings</a>
+                  <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+              </li>
+            </ul>  
           </div>
         </nav>
         
+        
     
-        </header><!--navbar-container-->
+    </header><!--navbar-container-->
     
      <!--img-slider-->
         <div class="img-slider-container">
