@@ -1,12 +1,32 @@
-.body {
+body{
   position: relative;
   font-family:
     'Roboto','Helvetica','Arial',sans-serif;
+    margin-top: 100px;
 }
 
 .header-container{
     margin-top: 30px;
     margin-bottom: 15px;
+}
+
+.navbar-brand{
+    width: 30px;
+}
+
+.navbar-brand img{
+    height: 40px;
+    float: left;
+    margin-left: 7px;
+}
+
+.nav-link img{
+    border-radius: 50%;
+    height: 40px;
+}
+
+.link-nav{
+    margin-top: 7px;
 }
 
 /* FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER FILTER */
