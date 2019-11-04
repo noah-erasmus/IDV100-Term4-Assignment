@@ -37,6 +37,8 @@ $(function(){
                     
                     var current_watch_list = JSON.parse(localStorage.getItem("watch_list"))
                     
+                    console.log(current_watch_list);
+                    
                     function addToWatchlist(addedMovie){
                         if(current_watch_list){
                             current_watch_list.push(addedMovie)
@@ -45,35 +47,8 @@ $(function(){
                         }
                         localStorage.setItem("watch_list", JSON.stringify(current_watch_list))
                     }
+                     addToWatchlist(addedMovie);
                     
-                    console.log(current_watch_list);
-                    
-                    var list_length = current_watch_list.length;
-                    
-                    console.log(list_length);
-                    
-                    for(i = 0; i < list_length; i++){
-                        if(current_watch_list[i].movie_title === addedMovie.movie_title){
-                            alert("Already in watchlist.");
-                        }
-                    }
-                    
-                    if(current_watch_list){
-                        
-                        for(i = 0; i < list_length; i++){
-                            if(current_watch_list[i].movie_title === addedMovie.movie_title){
-                                alert("Already in watchlist.");
-                            }
-                        }
-                        if(current_watch_list[i].movie_title === addedMovie.movie_title){
-                            alert("Already in watchlist.");
-                        }
-                        addToWatchlist(addedMovie);
-                        alert("Added to watchlist.")
-                    }else{
-                        addToWatchlist(addedMovie);
-                        alert("Added to watchlist.")
-                    }
                     
                     
                     
