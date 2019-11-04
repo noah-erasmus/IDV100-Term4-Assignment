@@ -6,25 +6,19 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
   
+    
+      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/individual.js"></script>
+    
     <link rel="stylesheet" href= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+    
       
     
-    <script src="individual.js"></script>
-    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
-    </script> 
-      
-    <script src= "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"> 
-    </script> 
-      
-    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> 
-    </script> 
     
     <link href="https://fonts.googleapis.com/css?family=Archivo|Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/library.css">
-    <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/individual.css">
 </head>  
   
@@ -33,7 +27,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-danger">
           <a class="navbar-brand" href="#">
-              <img src="img/logo.png">
+              <img src="../img/logo.png">
             </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -51,7 +45,7 @@
               </li>
               <li class="nav-item dropdown ml-auto">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="img/user-1.png">
+                  <img src="../img/user-1.png">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item user-dropdown" href="#">Username</a>
@@ -63,50 +57,18 @@
           </div>
         </nav>
         
-        
-      
-            <div class="col-12 col-md-12"  title="" average="" date="" genre=""> 
-                <div class="row">
-                     <div class="col-md-4"><p class="movie-title">Blade Runner</p></div>
-                </div>
-                <div class="row">
-                     <div class="col-md-4"><div class="star"></div><p class="vote-average">4</p></div>
-                </div>
-            <div class="row">
-                  <div class="col-12 col-md-4">
-                      <div class="square">
-                          <img src="../img/blade_runner.jpg"">
-                </div>
-                </div>
-                <div class="col-12 col-md-8">
-                      <div class="rectangle">
-                          <p class="release-date">Released:</p>
-                          <div class="date"><p class="the-date">2019 03 05</p></div>
-                           <p class="the-movie-genre">Genre:</p>
-                          <div class="movie-genre"><p class="the-genre">action</p></div>
-                          <button class="watch-me">watch</button>
-                          
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                     <div class="col-md-4"><p class="movie-title">Overview</p></div>
-                </div>
-                <div class="row">
-                     <div class="col-1"></div>
-                     <div class="col-10"><p class="over-view">In physics, energy is the quantitative property that must be transferred to an object in order to perform work on, or to heat, the object.[note 1] Energy is a conserved quantity; the law of conservation of energy states that energy can be converted in form, but not created or destroyed. The SI unit of energy is the joule, which is the energy transferred to an object by the work of moving it a distance of 1 metre against a force of 1 newton.</p></div>
-                     <div class="col-1"></div>
-                </div>
-                <div class="row">
-                      <div class="col-12 col-md-12">
-                        <div class="trailer col-12 col-md-6">
-                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kAaBb1VC8Ag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
-                    </div> 
-                </div>
-                
-                
-                
+    <div class="container">
+        <div class="info-area row">
+            <div class="indi-poster col-4">
+                <img class="movie-poster" src="">
+            </div>
+            <div class="details-area col-8">
+                <h3 class="movie-title"></h3>
+                <h3 class="the-date"></h3>
+                <h3 class="the-genre"></h3>
+                <h3 class="vote-average"></h3>
+            </div>
+        </div>
     </div>
     
     
@@ -151,6 +113,9 @@
           <!-- Copyright -->
 
         </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>  
   
   

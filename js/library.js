@@ -6,7 +6,7 @@ $(function(){
         var data = JSON.parse(this.response);
         var base_url =  "https://image.tmdb.org/t/p/original";
         function createEntries(rounded_rating, release_year, title_letter, poster_path, original_title, vote_average, genre_ids, release_date){
-            $(".entry-line").append("<div class='entry col-6 col-md-2 col-lg-2' genre='" + genre_ids + "' release='" + release_year + "' rating='" + rounded_rating + "' title='" + title_letter + "'><div class='overlay'><h3 class='entry-rating'>" + vote_average + "</h3><h3 class='entry-genre'>" + genre_ids + "</h3><div class='overlay-btns'><a class='#MOVIE'><div class='read-more-btn'><img src='../img/read_more_icon.png'><p>Read <br>More</p></div></a><a href='#WATCHLIST'><div class='add-watchlist-btn'><img src='../img/add-watchlist-btn.png'><p>Add to <br>Watchlist</p></div></a></div></div><div class='entry-poster'><img src='" + poster_path + "'></div><div class='entry-details'><p class='entry-title'>" + original_title + "</p><p class='entry-release'>" + release_date + "</p></div></div>");
+            $(".entry-line").append("<div class='entry col-6 col-md-2 col-lg-2' genre='" + genre_ids + "' release='" + release_year + "' rating='" + rounded_rating + "' title='" + title_letter + "'><div class='overlay'><h3 class='entry-rating'>" + vote_average + "</h3><h3 class='entry-genre'>" + genre_ids + "</h3><div class='overlay-btns'><a class='#MOVIE' href='the_individualpage.html'><div class='read-more-btn'><img src='../img/read_more_icon.png'><p>Read <br>More</p></div></a><a href='#WATCHLIST'><div class='add-watchlist-btn'><img src='../img/add-watchlist-btn.png'><p>Add to <br>Watchlist</p></div></a></div></div><div class='entry-poster'><img src='" + poster_path + "'></div><div class='entry-details'><p class='entry-title'>" + original_title + "</p><p class='entry-release'>" + release_date + "</p></div></div>");
         }
         
         for(i = 0; i < data.results.length; i++){
@@ -22,6 +22,36 @@ $(function(){
             
             createEntries(rounded_rating, release_year, title_letter, poster_path, original_title, vote_average, genre_ids, release_date);
         }
+        
+        $(".read-more-btn").on("click", function(){
+            var storageReference = $(this).parent().parent().parent().siblings(".entry-details").find(".entry-title").text();
+            for(i = 0; i < data.results.length; i++){
+                if(data.results[i].original_title === storageReference){
+                    var indi_title = data.results[i].original_title;
+                    var indi_imagePath = base_url + data.results[i].poster_path;
+                    var indi_rating = data.results[i].vote_average;
+                    var indi_genre = window.genre_obj[data.results[i].genre_ids[0]];
+                    var indi_releaseDate = data.results[i].release_date;
+                    
+                    localStorage.setItem("individual_title", indi_title);
+                    localStorage.setItem("individual_path", indi_imagePath);
+                    localStorage.setItem("individual_rating", indi_rating);
+                    localStorage.setItem("individual_genre", indi_genre);
+                    localStorage.setItem("individual_release", indi_releaseDate);
+                    
+                    location.href = "the_individualpage.html";
+                    
+                }
+            }
+        })
+        
+//        $(".read-more-btn").on("click", function(){
+//            var storageReference = $(this).parent().parent().parent().siblings(".entry-details").find(".entry-title").text();
+//            for(i = 0; i < data.results.length; i++){
+//                if(data.results[i].original_title === storageReference)
+//                
+//            }
+//        })
         
         $(".add-watchlist-btn").on("click", function(){
             var storageReference = $(this).parent().parent().parent().siblings(".entry-details").find(".entry-title").text();

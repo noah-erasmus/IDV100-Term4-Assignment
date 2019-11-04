@@ -1,230 +1,38 @@
 body {
-    margin: 0;
+    margin-top: 70px;
     padding: 0;
-    background-image:url(../img/pop%20corn.gif);
 }
 
-.container {
-    width:100%;
-    height:auto;
+.movie-poster{
+    width: 100%;
+    height: 100%;
 }
 
-.col-6 {
-  width:100%;
-  height:auto;  
-  padding-bottom: 10px;  
+.navbar-brand{
+    width: 30px;
 }
 
-
-.col-md-12 {
-  width:100%;  
-  height:auto; 
+.navbar-brand img{
+    height: 40px;
+    float: left;
+    margin-left: 7px;
 }
 
-.col-md-8 {
-  width:100%;  
-  height:auto; 
-  background-color: white;  
+.nav-link img{
+    border-radius: 50%;
+    height: 40px;
+    float: right;
 }
 
-.col-3 {
-    width:100%;
-    height:300px;
-    background-color: white;
+.nav-link p{
+    float: right;
 }
 
-.col-1 {
-    width:100%;
-    height:300px;
-}
-
-.col-10 {
-    width:100%;
-    height:120px;
-    background-color: white;
-}
-
-.row {
-    padding-bottom: 50px;
-}
-
-.col-12 {
-    margin-top: 2%;
-    width:100%;
-    height:auto;
-}
-
-.square {
-    width:250px;
-    margin-top:5%;
-    margin-left: 8%;
-    height:350px;
-    border-radius: 5px 5px 5px 5px;
-}
-
-img {
-    width:250px;
-    height:350px;
-    border-radius: 5px 5px 5px 5px;
-    background-size: cover;
-    background-position: center;
-}
-
-.the-date {
-    width:auto;
-    height:auto;
-    margin-left: 35%;
-    letter-spacing: 4px;
-    font-size: 25px;
-    color: lightcoral;
-    font-family: 'Roboto', sans-serif;;
-    
-}
-
-.release-date {
-    margin-top: -40px;
-    letter-spacing: 4px;
-    font-size: 25px;
-    color: lightcoral;
-    background-color: white;
-    font-family: 'Archivo Black', sans-serif;
-    
-}
-
-.the-movie-genre {
-    letter-spacing: 4px;
-    font-size: 25px;
-    color: lightcoral;
-    background-color: white;
-    font-family: 'Archivo Black', sans-serif;
-    
-}
-
-.movie-genre {
-    width:auto;
-    height:auto;
-    margin-top: -20px;
-    font-family: 'Roboto', sans-serif;;
-    margin-left: 31%;
-    
-}
-.rectangle {
-    padding-top: 12%;
-    width:350px;
-    margin-top:1.5%;
-    height:350px;
- 
-}
-.cover {
-    background-size: auto;
-    background-position: center;
-    width:100%;
-    margin-top: 30px;
-    height:250px;
+.link-nav{
+    margin-top: 7px;
 }
 
 
-
-.col-md-4 {
-  width:80%;  
-  height:auto; 
-  padding-left: 10%;
-  padding-right:10%; 
-
-}
-
-.movie-title {
-    width:250px;
-    margin-top:5%;
-    margin-left: 8%;
-    letter-spacing: 4px;
-    font-size: 25px;
-    color: lightcoral;
-    height:auto;
-    background-color: white;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-.out-of {
-    background-color: chartreuse;
-    letter-spacing: 4px;
-    font-size: 25px;
-    color: lightcoral;
-    height:auto;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-.star {
-    width:60px;
-    height:60px;
-    background-image: url(../img/gold%20star%20stra.png);
-    background-size: cover;
-    background-position: center;
-    opacity: 0.8;
-    margin-left: 100px;
-}
-.the-genre {
-    width:auto;
-    margin-top:5%;
-    margin-left: 8%;
-    letter-spacing: 4px;
-    font-size: 25px;
-    color: lightcoral;
-    height:auto;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;;
-}
-
-
-.vote-average {
-    width:250px;
-    margin-left:8%;
-    letter-spacing: 4px;
-    font-size: 25px;
-    color: lightcoral;
-    text-align: center;
-    height:auto;
-    background-color: white;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-.synopsis {
-    width:250px;
-    letter-spacing: 4px;
-    font-size: 25px;
-    color: lightcoral;
-    height:auto;
-    background-color: white;
-    font-family: 'Archivo Black', sans-serif;
-}
-
-.over-view {
-    width:100%;
-    letter-spacing: 4px;
-    font-size: 17px;
-    color: lightcoral;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;;
-}
-
-.trailer {
-    width:90%;
-    margin-left: 5%;
-    height:150px;
-    background-color: azure;
-}
-
-
-.watch-me {
-    margin-left: 32%;
-    width:130px;
-    height:45px;
-    letter-spacing: 2px;
-    color: white;
-    background-color: #dc2543;
-    text-decoration: none;
-    border: 10px 10px 10px 10px;
-}
 
 
 
