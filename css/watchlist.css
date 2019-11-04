@@ -191,12 +191,26 @@
     .entry-line{
         height: 150px;
     }
+    
+    .watchlist-title h4{
+        font-size: 12px;
+    }
+    
+    .watchlist_title h5{
+        font-size: 10px;
+    }
+    
+    .watchlist-genre h5{
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px){       /* SMALL SCREENS */
     .entry-line{
         height: 240px;
     }
+    
+    
     
     .select-label{
         font-size: 16px;
