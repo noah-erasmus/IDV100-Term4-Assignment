@@ -145,6 +145,11 @@ body{
 }
 
 /* LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY LIBRARY */
+
+.library-area{
+    height: 1100px;
+}
+
 .entry-line{
     height: 300px;
     text-align: center;
