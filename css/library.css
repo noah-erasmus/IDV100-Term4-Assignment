@@ -23,6 +23,11 @@ body{
 .nav-link img{
     border-radius: 50%;
     height: 40px;
+    float: right;
+}
+
+.nav-link p{
+    float: right;
 }
 
 .link-nav{

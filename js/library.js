@@ -8,6 +8,7 @@ $(function(){
         function createEntries(rounded_rating, release_year, title_letter, poster_path, original_title, vote_average, genre_ids, release_date){
             $(".entry-line").append("<div class='entry col-6 col-md-2 col-lg-2' genre='" + genre_ids + "' release='" + release_year + "' rating='" + rounded_rating + "' title='" + title_letter + "'><div class='overlay'><h3 class='entry-rating'>" + vote_average + "</h3><h3 class='entry-genre'>" + genre_ids + "</h3><div class='overlay-btns'><a class='#MOVIE'><div class='read-more-btn'><img src='../img/read_more_icon.png'><p>Read <br>More</p></div></a><a href='#WATCHLIST'><div class='add-watchlist-btn'><img src='../img/add-watchlist-btn.png'><p>Add to <br>Watchlist</p></div></a></div></div><div class='entry-poster'><img src='" + poster_path + "'></div><div class='entry-details'><p class='entry-title'>" + original_title + "</p><p class='entry-release'>" + release_date + "</p></div></div>");
         }
+        
         for(i = 0; i < data.results.length; i++){
             poster_path = base_url + data.results[i].poster_path;
             original_title = data.results[i].original_title;
@@ -24,7 +25,6 @@ $(function(){
         
         $(".add-watchlist-btn").on("click", function(){
             var storageReference = $(this).parent().parent().parent().siblings(".entry-details").find(".entry-title").text();
-            console.log(storageReference);
             for(i = 0; i < data.results.length; i++){
                 if(data.results[i].original_title === storageReference){
                     var title = data.results[i].original_title;
@@ -33,13 +33,50 @@ $(function(){
                     var genre = window.genre_obj[data.results[i].genre_ids[0]];
                     var releaseDate = data.results[i].release_date;
                     
-                    localStorage.setItem("title", title);
-                    localStorage.setItem("imagepath", imagePath);
-                    localStorage.setItem("rating", rating);
-                    localStorage.setItem("genre", genre);
-                    localStorage.setItem("releaseDate", releaseDate);
+                    var addedMovie = {movie_title: title, movie_poster: imagePath, movie_rating: rating, movie_genre: genre, movie_release: releaseDate};
                     
-                    alert("Added to watchlist.")
+                    var current_watch_list = JSON.parse(localStorage.getItem("watch_list"))
+                    
+                    function addToWatchlist(addedMovie){
+                        if(current_watch_list){
+                            current_watch_list.push(addedMovie)
+                        }else{
+                            current_watch_list = [addedMovie]
+                        }
+                        localStorage.setItem("watch_list", JSON.stringify(current_watch_list))
+                    }
+                    
+                    console.log(current_watch_list);
+                    
+                    var list_length = current_watch_list.length;
+                    
+                    console.log(list_length);
+                    
+                    for(i = 0; i < list_length; i++){
+                        if(current_watch_list[i].movie_title === addedMovie.movie_title){
+                            alert("Already in watchlist.");
+                        }
+                    }
+                    
+                    if(current_watch_list){
+                        
+                        for(i = 0; i < list_length; i++){
+                            if(current_watch_list[i].movie_title === addedMovie.movie_title){
+                                alert("Already in watchlist.");
+                            }
+                        }
+                        if(current_watch_list[i].movie_title === addedMovie.movie_title){
+                            alert("Already in watchlist.");
+                        }
+                        addToWatchlist(addedMovie);
+                        alert("Added to watchlist.")
+                    }else{
+                        addToWatchlist(addedMovie);
+                        alert("Added to watchlist.")
+                    }
+                    
+                    
+                    
                 }
             }
         })

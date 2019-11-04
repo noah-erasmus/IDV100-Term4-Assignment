@@ -1,33 +1,35 @@
 $(function() {
-
-    var title = localStorage.getItem("title");
-    var imagePath = localStorage.getItem("imagepath");
-    var rating = localStorage.getItem("rating");
-    var genre = localStorage.getItem("genre");
-    var releaseDate = localStorage.getItem("releaseDate");
+    
+    var movieArray = JSON.parse(localStorage.getItem("watch_list"))
+    console.log(movieArray);
     
     var duplicateCheck = ""
     
-    function createEntries(imagePath, title, rating, genre, releaseDate){
-        $(".watchlist-area").append("<div class='watchlist-entry row'><div class='watchlist-poster col-sm-2'><img src='" + imagePath + "'></div><div class='watchlist-title col-sm-4'><h3>" + title + "</h3><h4>" + releaseDate + "</h4></div><div class='watchlist-rating col-sm-2'><h3>" + rating + "</h3></div><div class='watchlist-genre col-sm-2'><h3>" + genre + "</h3></div><div class='remove-btn col-sm-1'><p>Remove</p></div></div>");
-    }
-    
-   
-    if(title !== duplicateCheck){
-        createEntries(imagePath, title, rating, genre, releaseDate);
-        duplicateCheck = title;
-    }
-    
-    $(".refresh-btn").on("click", function(){
-        if(title !== duplicateCheck){
-            createEntries(imagePath, title, rating, genre, releaseDate);
-            duplicateCheck = title;
-        }
+    for(i = 0; i < movieArray.length; i++){
+        var title = movieArray[i].movie_title;
+        var imagePath = movieArray[i].movie_poster;
+        var rating = movieArray[i].movie_rating;
+        var genre = movieArray[i].movie_genre;
+        var releaseDate = movieArray[i].movie_release;
         
-    });
+        createEntries(imagePath, title, releaseDate, rating, genre);
+    }
+    
+    function createEntries(imagePath, title, rating, genre, releaseDate){
+        $(".watchlist-area").append("<div class='watchlist-entry row'><div class='watchlist-poster col-sm-2'><img src='" + imagePath + "'></div><div class='watchlist-title col-sm-4'><h3 class='title-check'>" + title + "</h3><h4>" + releaseDate + "</h4></div><div class='watchlist-rating col-sm-2'><h3>" + rating + "</h3></div><div class='watchlist-genre col-sm-2'><h3>" + genre + "</h3></div><div class='remove-btn col-sm-1'><p>Remove</p></div></div>");
+    }
     
     $(".remove-btn").on("click", function(){
         $(this).parent(".watchlist-entry").hide();
+        var title_check = $(this).parent().find(".title-check").text();
+        console.log(title_check);
+        for(i = 0; i < movieArray.length; i++){
+            var index_title = movieArray[i].movie_title;
+            if(title_check === index_title){
+                movieArray.splice(i, 1);
+                localStorage.setItem("watch_list", JSON.stringify(movieArray));
+            }
+        }
     })
   
     

@@ -1,4 +1,8 @@
 $(function(){
+    var activeUsername = localStorage.getItem("active-user");
+    console.log(activeUsername);
+    $(".user-dropdown").text(activeUsername);
+    
     var apiRequest = new XMLHttpRequest();
     apiRequest.open('GET', 'https://api.themoviedb.org/3/movie/popular?api_key=3b877e38df9daff06def35c184995a4e&language=en-US&page=1', true);
     apiRequest.send();
