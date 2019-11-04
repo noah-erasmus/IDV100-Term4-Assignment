@@ -16,7 +16,7 @@ $(function() {
     }
     
     function createEntries(imagePath, title, rating, genre, releaseDate){
-        $(".watchlist-area").append("<div class='watchlist-entry row'><div class='watchlist-poster col-sm-2'><img src='" + imagePath + "'></div><div class='watchlist-title col-sm-4'><h4 class='title-check'>" + title + "</h4><h5>" + releaseDate + "</h4></div><div class='watchlist-rating col-sm-2'><h5>" + rating + "</h5></div><div class='watchlist-genre col-sm-2'><h4>" + genre + "</h4></div><div class='remove-btn col-sm-1'><p>Remove</p></div></div>");
+        $(".watchlist-area").append("<div class='watchlist-entry row'><div class='watchlist-poster col-sm-2'><img src='" + imagePath + "'></div><div class='watchlist-title col-sm-4'><h4 class='title-check'>" + title + "</h4><h5>" + releaseDate + "</h4></div><div class='watchlist-rating col-sm-2'><h5>" + rating + "</h5></div><div class='watchlist-genre col-sm-2'><h4>" + genre + "</h4></div><div class='remove-btn col-sm-1'><img src='../img/remove-btn.png'><p>Remove</p></div></div>");
     }
     
     $(".remove-btn").on("click", function(){

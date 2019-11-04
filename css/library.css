@@ -330,6 +330,14 @@ body{
     .add-watchlist-btn p{
         display: none;
     }
+    
+    .remove-btn p{
+        display: none;
+    }
+    
+    .remove-btn img{
+        width: 20px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 992px){       /* SMALL SCREENS */
@@ -373,6 +381,14 @@ body{
     .add-watchlist-btn p{
         display: none;
     }
+    
+    .remove-btn p{
+        display: none;
+    }
+    
+    .remove-btn img{
+        width: 20px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){       /* MEDIUM SCREENS */
@@ -392,6 +408,10 @@ body{
     .add-watchlist-btn img{
         display: none;
     }
+    
+    .remove-btn img{
+        display: none;
+    }
 }
 
 @media (min-width: 1200px){         /* LARGE SCREENS */
@@ -404,6 +424,10 @@ body{
     }
     
     .add-watchlist-btn img{
+        display: none;
+    }
+    
+    .remove-btn img{
         display: none;
     }
 }
