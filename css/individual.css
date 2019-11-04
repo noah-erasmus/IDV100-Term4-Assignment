@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image:url(../img/pop%20corn.gif);
+    background-image:url(../img/topography.png);
 }
 
 .container {
@@ -157,7 +157,7 @@ img {
 .star {
     width:60px;
     height:60px;
-    background-image: url(../img/gold%20star%20stra.png);
+    background-image: url(../img/1559839497star-png-1456.png);
     background-size: cover;
     background-position: center;
     opacity: 0.8;
