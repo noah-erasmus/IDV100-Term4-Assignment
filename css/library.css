@@ -306,6 +306,7 @@ body{
     .overlay{
         width: 197px;
         height: 215px;
+        opacity: 1;
     }
     
     .overlay h3{
@@ -365,6 +366,7 @@ body{
     .overlay{
         width: 85px;
         height: 145px;
+        opacity: 1;
     }
     
     .overlay h3{
