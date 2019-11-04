@@ -1,11 +1,13 @@
 body {
     margin-top: 70px;
     padding: 0;
+    background-image: url(../img/topography.png);
 }
 
 .movie-poster{
-    width: 100%;
-    height: 100%;
+    width: 250px;
+    height: 350px;
+    margin-left: -80px; 
 }
 
 .navbar-brand{
@@ -33,16 +35,43 @@ body {
 }
 
 
+.col-md-12 {
+    width:100%;
+    text-align: center;
+    height:auto;
+    
+}
 
+.col-12 {
+    width:100%;
+    height:auto;
+}
 
+.col-4 {
+    width:100%;
+    height:auto;
+}
 
+.movie-title {
+    color: crimson;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 35px;
+    margin-left: 20px;
+    letter-spacing: 4px;
+}
 
+.the-genre {
+    color: crimson;
+    font-family: 'Archivo Black', sans-serif;
+    margin-left: -80px;
+    font-size: 35px;
+    margin-left: 20px;
+    letter-spacing: 4px;
+}
 
-
-
-
-
-
+.the-date {
+    margin-left:10px;
+}
 
 
 

@@ -33,19 +33,17 @@ $(function (){
         var username = $("#usernameInput").val();
         var password = $("#passwordInput").val();
 
-
         console.log(username);
         console.log(password);
-
 
     for (i = 0; i < registeredUsers.length; i++) {
         if (username === registeredUsers[i].username && password === registeredUsers[i].password) {
 
-localStorage.setItem("activeUser", username);
+        localStorage.setItem("activeUser", username);
+        location.href = '../index.html';
 
-            location.href = '../index.html';
         }else{
-            alert('Username or Password invalid!');
+            $(".message").text("Username or Password Invalid");
         }
     }
 // if a user match occurs the set the localstroage "user-active" to the username that has been stored

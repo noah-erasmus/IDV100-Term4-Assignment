@@ -23,6 +23,7 @@ body{
 
 .container-fluid{
     padding: 0px;
+    margin: 0px;
 }
 
 .narrow{
@@ -58,18 +59,26 @@ body{
     text-transform: uppercase;
     margin: 1rem;
 }
+.img-slider-container{
+    overflow: hidden;
+}
+.carousel-item{
+    overflow: hidden;
+}
 
 .carousel-inner{
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 
 .carousel-item{
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     background-size: cover;
     margin: 0px;
     padding: 0px;
+    overflow: hidden;
 }
 .carousel-caption{
     position: absolute;
@@ -203,6 +212,10 @@ h5{
     }
     p.lead{
         font-size: 1rem;
+    }
+    .portfolio{
+    width: 50%;
+    height: 50%;
     }
 }
 
