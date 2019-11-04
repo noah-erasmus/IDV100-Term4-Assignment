@@ -48,10 +48,10 @@ localStorage.setItem("activeUser", username);
             alert('Username or Password invalid!');
         }
     }
-// if a user match occurs the set the localstroage "loggedInUser" to the username from the input 
-// Get the local storage name and then go to town...
+// if a user match occurs the set the localstroage "user-active" to the username that has been stored
+// Get the local storage name and store in navbar
+document.getElementById("user-active").innerHTML = localStorage.getItem("activeUser");
 
 });
 });
-
 
