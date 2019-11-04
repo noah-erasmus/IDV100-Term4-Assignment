@@ -78,8 +78,10 @@ $(function(){
                             current_watch_list = [addedMovie]
                         }
                         localStorage.setItem("watch_list", JSON.stringify(current_watch_list))
+                        alert("Added to your watchlist")
                     }
-                     addToWatchlist(addedMovie);
+                    addToWatchlist(addedMovie);
+                    
                     
                     
                     
